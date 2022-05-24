@@ -42,7 +42,7 @@
 },
 
     navigation: {
-    nextEl: ".publications__swiper-button-next_light",
-    prevEl: ".publications__swiper-button-prev_light",
+    nextEl: ".swiper-button-next_light",
+    prevEl: ".swiper-button-prev_light",
 },
 });

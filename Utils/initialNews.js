@@ -81,21 +81,21 @@ export const initialPub = [
             'process tens and hundreds of terabytes of data efficiently. And by efficiency, one should understand not only the speed of data processing operations execution but als…'
     },
     { //5
-        image: './img/Publication/./img/Publication/publication_Intelligent_sightseeing.png',
+        image: './img/Publication/publication_5.jpg',
         name: 'Intelligent sightseeing in immensely manifold cities: Case …',
         authors: 'Ksenia D Mukhina, Alexander A Visheratin, Denis Nasonov, Lev Manovich',
         text: "In this work, we show how social media data can be used for the improvement of touristic experience. We present an algorithm for automated touristic paths " +
             "construction. Score function for location depends on three components: location's social media popularity and rating, distances of place from others in r…"
     },
     { //6
-        image: './img/Publication/publication_User_Matching',
+        image: './img/Publication/publication_User_Matching.png',
         name: 'User Profiles Matching for Different Social Networks Based …',
         authors: 'Timur Sokhin, Nikolay Butakov, Denis Nasonov',
         text: 'It is common practice nowadays to use multiple social networks for different social roles. Although this, these networks assume differences in content type,' +
             ' communications and style of speech. If we intend to understand human behaviour as a key-feature for recommender systems, banking risk assessm…'
     },
     {//7
-        image: './img/Publication/publication_Orienteering_Problem.png',
+        image: './img/Publication/publication_Orienteering_Problem.jpg',
         name: 'Orienteering Problem with Functional Profits for multi-sourc…',
         authors: 'Ksenia D Mukhina, Alexander A Visheratin, Denis Nasonov',
         text: 'Orienteering problem (OP) is a routing problem, where the aim is to generate a path through set of nodes, which would maximize total score and would not exceed ' +
@@ -115,26 +115,26 @@ export const initialPub = [
         text: 'In today’s world, it is crucial to be proactive and be prepared for events which are not happening yet. Thus, there is no surprise that in the field of social ' +
             'media analysis the research agenda has moved from the development of event detection methods to a brand new area - event prediction models...'
     },
-    {//9
-        image: './img/Publication/publication_Urban events.png',
-        name: 'Spatiotemporal Filtering Pipeline for Efficient Social Networks Dat…',
-        authors: 'Ksenia Mukhina, Alexander Visheratin, Denis Nasonov',
-        text: 'One of the areas that gathers momentum is the investigation of location-based social networks (LBSNs) because the understanding of citizens’ behavior on various' +
-            ' scales can help to improve quality of living, enhance urban management, and advance the development of smart cities. But it is widely known that the…'
+    {//10
+        image: './img/Publication/publication_Ensemble-based_method.jpg',
+        name: 'Ensemble-based method of answers retrieval for domain spe…',
+        authors: 'Iskander Safiulin, Nikolay Butakov, Dmitriy Alexandrov, Denis Nasonov',
+        text: 'Many companies want or prefer to use chatbot systems to provide smart assistants for accompanying human specialists especially newbies with automatic consulting. ' +
+            'Implementation of a really useful smart assistant for a specific domain requires a knowledge base for this domain, that often e…'
     },
-    {//9
-        image: './img/Publication/publication_Urban events.png',
-        name: 'Spatiotemporal Filtering Pipeline for Efficient Social Networks Dat…',
-        authors: 'Ksenia Mukhina, Alexander Visheratin, Denis Nasonov',
-        text: 'One of the areas that gathers momentum is the investigation of location-based social networks (LBSNs) because the understanding of citizens’ behavior on various' +
-            ' scales can help to improve quality of living, enhance urban management, and advance the development of smart cities. But it is widely known that the…'
+    {//11
+        image: './img/Publication/publication_Evaluation.jpg',
+        name: 'Evaluation of modern tools and techniques for storing time-serie…',
+        authors: 'Alexey Struckov, Semen Yufa, Alexander A Visheratin, Denis Nasonov',
+        text: 'Time series data as its analysis and applications recently have become increasingly important in different areas and domains. Many fields of science and industry rely' +
+            ' on storing and processing large amounts of time series - economics and finance, medicine, the Internet of Things, environmental protection, …'
     },
-    {//9
-        image: './img/Publication/publication_Urban events.png',
-        name: 'Spatiotemporal Filtering Pipeline for Efficient Social Networks Dat…',
-        authors: 'Ksenia Mukhina, Alexander Visheratin, Denis Nasonov',
-        text: 'One of the areas that gathers momentum is the investigation of location-based social networks (LBSNs) because the understanding of citizens’ behavior on various' +
-            ' scales can help to improve quality of living, enhance urban management, and advance the development of smart cities. But it is widely known that the…'
+    {//12
+        image: './img/Publication/publication_Workflow_scheduling.jpg',
+        name: 'Workflow scheduling using neural networks and reinforcement lear…',
+        authors: 'Mikhail Melnik, Denis Nasonov',
+        text: 'The development of information technologies entails a nonlinear growth of both volumes of data and the complexity of data processing itself. Scheduling is ' +
+            'one of the main components for optimizing the operation of   the computing system. Currently, there are a large number of scheduling algorithms. However, even in spite of existing hybrid sch…'
     },
 
 
