@@ -6,7 +6,7 @@
 @import url(../block/section-title.css);
 @import url(../block/section-text.css);
 @import url(../block/news.css);
-@import url(../block/swiper.css);
+@import url(../block/swiper.scss);
 @import url(../block/cards.css);
 @import url(../block/publications.css);
 @import url(../block/popup.css);

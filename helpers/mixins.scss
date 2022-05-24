@@ -1,0 +1,24 @@
+@mixin font-style($weight: 400, $size: 18px, $height: 30px) {
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $height;
+}
+
+//@mixin arrow($size: 7px) {
+//
+//}
+
+@mixin flex($justify-content: space-between) {
+  display: flex;
+  justify-content: $justify-content;
+}
+
+@mixin overflow($rows: 3) {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $rows;
+  overflow: hidden;
+  white-space: normal;
+  text-overflow: ellipsis;
+}
