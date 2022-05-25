@@ -1,8 +1,9 @@
-@mixin font-style($weight: 400, $size: 18px, $height: 30px) {
+@mixin font-style($weight: 400, $size: 18px, $height: 30px, $color: $color-white) {
   font-family: 'Open Sans', 'Arial', sans-serif;
   font-weight: $weight;
   font-size: $size;
   line-height: $height;
+  color: $color;
 }
 
 //@mixin arrow($size: 7px) {

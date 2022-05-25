@@ -1,0 +1,32 @@
+.header {
+  max-width: 1440px;
+  height: 54px;
+  background-color: $color-darkBlue;
+  z-index: 1;
+  @include flex();
+  padding: 13px 165px 13px 165px;
+}
+
+.header__logo {
+  width: 150px;
+  height: 54px;
+  object-fit: contain;
+}
+
+.header__navigation-links {
+  list-style: none;
+  @include flex();
+  @include font-style(400, 14px, 24px);
+  width: 825px;
+  min-height: 44px;
+
+}
+
+.header__navigation-link {
+  width: 100px;
+  text-align: center;
+}
+
+.header__navigation-link:hover {
+border-bottom: 2px solid $color-emerland;
+}
