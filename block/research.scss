@@ -1,0 +1,119 @@
+.research {
+  max-width: 100%;
+  background-color: $color-lightBlue;
+  padding: 80px 165px 80px 129px;
+}
+
+.research__wrapper-texts {
+  width: 1146px;
+  @include flex;
+  margin: 60px 0;
+}
+
+.research__text {
+  @include font-style($color: $color-darkBlue);
+  max-width: 540px;
+  letter-spacing: 0.1px;
+  padding-left: 36px;
+}
+
+.research__text:last-of-type {
+  @include font-style($weight: 300, $height: 26px, $color: $color-darkBlue);
+  letter-spacing: 0.1px;
+}
+
+.research__images {
+  @include flex();
+  gap: 12px;
+  max-width: 552px;
+}
+
+.research__image {
+  width: 264px;
+  height: 276px;
+}
+
+.research__grid {
+  list-style: none;
+  @include flex();
+  gap: 30px;
+  //max-width: 1120px;
+}
+
+.research__card {
+  width: 255px;
+  height: 430px;
+  box-shadow: $card-shadow;
+  padding: 0px 20px 20px 20px;
+  @include flex();
+  flex-direction: column;
+  align-items: center;
+  border-radius: $border-radius-descktop;
+  z-index: 1;
+}
+
+.research__card-title {
+  @include font-style($weight: 600, $color: $color-deepBlue);
+  text-align: center;
+}
+
+.research__card-title-calculations {
+   max-width: 112px;
+}
+
+.research__card-title-qa {
+  max-width: 80px;
+}
+
+.research__card-text {
+  @include font-style($size: 14px, $height: 20px, $color: $color-deepBlue);
+  text-align: center;
+}
+
+.research__link {
+  @include font-style($size: 14px, $height: 20px, $color: $color-deepBlue);
+  width: 215px;
+  height: 40px;
+  border: 1px solid $color-deepBlue;
+  border-radius: $border-radius-descktop;
+  text-decoration: none;
+  @include flex(center);
+  align-items: center;
+  flex-direction: column;
+}
+
+.research__card-analysis,
+.research__card-big-data,
+.research__card-calculations,
+.research__card-qa {
+  position: relative;
+
+}
+
+.research__card-analysis::before {
+   @include research-card-before;
+}
+
+.research__card-big-data::before {
+  @include research-card-before(url("../img/Lab/Machine_learning.png"));
+}
+
+.research__card-calculations::before {
+  @include research-card-before(url("../img/Lab/Data.png"));
+}
+
+.research__card-qa::before {
+  @include research-card-before(url("../img/Lab/Robot.png"));
+}
+
+.research__card::after {
+  content: '';
+  position: absolute;
+  bottom: 30px;
+  left: 0px;
+  width: 255px;
+  height: 430px;
+  background: $color-gradient-biege;
+  border-radius: $border-radius-descktop;
+  z-index: -1;
+}

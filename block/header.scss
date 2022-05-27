@@ -1,6 +1,6 @@
 .header {
   max-width: 1440px;
-  height: 54px;
+  height: 53px;
   background-color: $color-darkBlue;
   z-index: 1;
   @include flex();
@@ -18,7 +18,7 @@
   @include flex();
   @include font-style(400, 14px, 24px);
   width: 825px;
-  min-height: 44px;
+  min-height: 35px;
 
 }
 
