@@ -17,6 +17,7 @@
   border-radius: $border-radius-desktop;
   padding: 30px;
   gap: 30px;
+  margin-bottom: 35px;
 }
 
 .education__list-wrapper {
@@ -32,13 +33,56 @@
   @include font-style($color: $color-darkBlue);
 }
 
-.education__link-list{
+.education__link-list {
   @include font-style($weight:600, $height: 20px, $color: $color-darkBlue);
   text-decoration: none;
   margin-top: 20px;
+  position: relative;
+  max-width: min-content;
+}
+
+.education__link-list::after{
+  content: '';
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background-image: url('../img/icons/arrow-dark.svg');
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  transform: rotate(180deg);
+  top: calc(50% - 12px);
+  right: -36px;
 }
 
 .education__image {
   width: 445px;
   height: 364px;
+}
+
+.education__buttons {
+  width: 540px;
+  height: 60px;
+  border: 1px solid $color-lightBlue;
+  border-radius: $border-radius-desktop;
+  @include flex();
+  margin: 0 auto;
+}
+
+.education__button {
+  width: 279px;
+  background-color: transparent;
+  border-radius: $border-radius-desktop;
+  border: none;
+  @include font-style($weight: 600, $color: $color-lightBlue);
+  text-transform: uppercase;
+}
+
+.education__button:hover {
+  cursor: pointer;
+}
+
+.education__button_active {
+  background-color: $color-lightBlue;
+  @include font-style($weight: 600, $color: $color-darkBlue);
 }
