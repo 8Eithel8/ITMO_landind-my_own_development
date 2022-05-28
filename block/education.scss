@@ -1,0 +1,44 @@
+.education {
+    max-width: 100%;
+    background-color: $color-emerland;
+    padding: 80px 136px;
+}
+
+.education__text {
+  @include font-style();
+  letter-spacing: 0.1px;
+  margin: 30px auto 60px auto;
+}
+
+.education__block {
+  @include flex();
+  max-width: 1169px;
+  background-color: $color-white;
+  border-radius: $border-radius-desktop;
+  padding: 30px;
+  gap: 30px;
+}
+
+.education__list-wrapper {
+  @include flex();
+  flex-direction: column;
+}
+
+.education__subtitle {
+  @include font-style($weight:600, $color: $color-darkBlue);
+}
+
+.education__item {
+  @include font-style($color: $color-darkBlue);
+}
+
+.education__link-list{
+  @include font-style($weight:600, $height: 20px, $color: $color-darkBlue);
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+.education__image {
+  width: 445px;
+  height: 364px;
+}
