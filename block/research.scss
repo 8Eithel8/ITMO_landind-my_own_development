@@ -20,6 +20,19 @@
 .research__text:last-of-type {
   @include font-style($weight: 300, $height: 26px, $color: $color-darkBlue);
   letter-spacing: 0.1px;
+  position: relative;
+}
+
+.research__text:last-of-type::after {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 24px;
+  height: 24px;
+  background-image: url('../img/Lab/molecule.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .research__images {
@@ -41,6 +54,7 @@
 }
 
 .research__card {
+  box-sizing: border-box;
   width: 255px;
   height: 430px;
   box-shadow: $card-shadow;
@@ -50,9 +64,18 @@
   align-items: center;
   border-radius: $border-radius-descktop;
   z-index: 1;
+  transform: translateY(0px);
+  transition: transform 0.3s ease;
 }
 
-.research__card-title {
+.research__card:hover {
+  transform: translateY(-20px);
+  background-color: $color-emerland;
+  transition: transform, background-color 0.3s ease;
+}
+
+
+  .research__card-title {
   @include font-style($weight: 600, $color: $color-deepBlue);
   text-align: center;
 }
@@ -106,6 +129,11 @@
   @include research-card-before(url("../img/Lab/Robot.png"));
 }
 
+.research__card-analysis:hover {
+  transform: translateY(-20px);
+  transition: transform, background-color 0.3s ease;
+}
+
 .research__card::after {
   content: '';
   position: absolute;
@@ -116,4 +144,21 @@
   background: $color-gradient-biege;
   border-radius: $border-radius-descktop;
   z-index: -1;
+  transition: background 0.6s ease;
+}
+
+.research__card:hover::after {
+  background: linear-gradient(180deg, #009FAC 0%, rgba(224, 240, 255, 0) 100%, rgba(0, 159, 172, 0) 100%);
+  transition: background 0.6s ease;
+
+}
+
+.research__card:hover > .research__card-title,
+.research__card:hover > .research__card-text {
+  color: $color-white;
+}
+
+.research__card:hover > .research__link {
+  color: $color-white;
+  border: solid 1px $color-white;
 }
