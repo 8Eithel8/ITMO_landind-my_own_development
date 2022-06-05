@@ -3,7 +3,8 @@ import Publications from '../components/Publications.js';
 // import './index.css';
 import News from '../components/News.js';
 import Section from "../components/Section.js";
-import { initialNews, initialPub } from "../Utils/initialNews.js";
+import Team from "../components/Team.js";
+import { initialNews, initialPub, initialTeam } from "../Utils/initialNews.js";
 
 const cardTemplate = '#news-template';
 
@@ -50,3 +51,26 @@ const sectionPub = new Section(
 
 
 sectionPub.renderAll();
+
+//создаем карточки команды
+const cardTemplateTeam = '#team';
+
+function createCardTeam(data) {
+    const team = new Team(data, cardTemplateTeam);
+    return team.generateCard();
+}
+
+function addCardTeam(data) {
+    sectionTeam.addItem(createCardTeam(data));
+};
+
+const sectionTeam = new Section(
+    {
+        items: initialTeam,
+        renderer: addCardTeam
+    },
+    '.team__swiper-wrapper'
+);
+
+
+sectionTeam.renderAll();

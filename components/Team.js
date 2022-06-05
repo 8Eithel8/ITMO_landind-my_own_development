@@ -1,8 +1,8 @@
 export default class Team {
     constructor(data, cardSelector) {
         this.image = data.image;
-        this.title = data.title;
-        this.author = data.employee;
+        this.name = data.name;
+        this.post = data.post;
         this._cardSelector = cardSelector; //  записали селектор в приватное поле
     };
 
@@ -25,9 +25,10 @@ export default class Team {
 
 
         // Добавляем данные
-        this._cardTitle.textContent = this.title;
+        this._cardTitle.textContent = this.name;
         this._cardImage.src = this.image;
-        this._cardAuthors.textContent = this.author;
+        this._cardImage.alt = 'фотография ' + this.name;
+        this._cardAuthors.textContent = this.post;
 
         // возвращаем элемент во внешнюю область
         return this._element;

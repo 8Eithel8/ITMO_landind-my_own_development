@@ -136,6 +136,42 @@ export const initialPub = [
         text: 'The development of information technologies entails a nonlinear growth of both volumes of data and the complexity of data processing itself. Scheduling is ' +
             'one of the main components for optimizing the operation of   the computing system. Currently, there are a large number of scheduling algorithms. However, even in spite of existing hybrid sch…'
     },
-
-
     ]
+
+export const initialTeam = [
+    {
+        image: './img/Team/photo_1_Bobtsov.jpg',
+        name: 'Бобцов Алексей Алексеевич',
+        post: 'Директор, профессор, ДТН'
+    },
+    {
+        image: './img/Team/photo_2_Bukhan.jpg',
+        name: 'Буханоский Александр Валерьевич',
+        post: 'Директор, руководитель, ДТН'
+    },
+    {
+        image: './img/Team/photo_3_Murom.jpg',
+        name: 'Муромцев Дмитрий Ильич',
+        post: 'Руководитель, доцент, КТН'
+    },
+    {
+        image: './img/Team/photo_4_Matveev.jpg',
+        name: 'Матвеев Юрий Николаевич',
+        post: 'Руководитель, профессор, ДТН'
+    },
+    {
+        image: './img/Team/photo_5_Shal.jpg',
+        name: 'Шалыто Анатолий Абрамович',
+        post: 'Профессор, ДТН'
+    },
+    {
+        image: './img/Team/photo_6_Kol.jpg',
+        name: 'Колюбин Сергей Алексеевич',
+        post: 'Начальник, профессор, ДТН'
+    },
+    {
+        image: './img/Team/photo_7_Prikin.jpg',
+        name: 'Пыркин Антон Александрович',
+        post: 'Декан, профессор, ДТН'
+    },
+]
