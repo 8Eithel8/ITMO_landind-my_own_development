@@ -37,3 +37,12 @@
   background-repeat: no-repeat;
   z-index: -1;
 }
+
+@mixin text-italic-color () {
+  font-family: "Open Sans", sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: $color-emerland;
+}

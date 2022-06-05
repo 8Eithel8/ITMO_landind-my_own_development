@@ -1,0 +1,39 @@
+.team {
+  max-width: 1440px;
+  min-height: 595px;
+  background-image: linear-gradient($color-lightBlue 50%, $color-deepBlue 50%);
+}
+
+.team__swiper-slide {
+  width: 255px;
+  height: 450px;
+}
+
+.team__card {
+@include flex();
+  flex-direction: column;
+  align-items: center;
+  width: 255px;
+  height: 450px;
+  background-color: #FFFFFF;
+  box-sizing: border-box;
+  border-radius: $border-radius-desktop;
+  padding: $padding-inside-card;
+  flex-shrink: 0;
+  margin-top: 15px;
+  margin-right: 10px;
+}
+
+.team__image {
+  width: 215px;
+  height: 286px;
+}
+
+.team__card-title {
+ @include font-style($weight: 600, $color: $color-darkBlue);
+  text-align: center;
+}
+
+.team__member {
+  @include text-italic-color;
+}

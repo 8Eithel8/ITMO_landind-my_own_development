@@ -4,8 +4,8 @@
   width: 348px;
   height: 340px;
   background: #E0F0FF;
-  border-radius: 10px;
-  padding: 20px 20px 30px;
+  border-radius: $border-radius-desktop;
+  padding: $padding-inside-card;
   flex-shrink: 0;
   margin-top: 15px;
   margin-right: 10px;
@@ -103,12 +103,7 @@
   line-height: 19px;
   color: #000D26;
   margin: 0 0 0 0;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 7;
-  overflow: hidden;
-  white-space: normal;
-  text-overflow: ellipsis;
+  @include overflow($rows: 7);
 }
 
 @media (max-width: 767px) {
@@ -174,19 +169,9 @@
 
 .cards__authors {
   height: 38px;
-  font-family: 'Open Sans', sans-serif;
-  font-style: italic;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 19px;
-  color: #009FAC;
+  @include text-italic-color();
   margin: 4px 0 20px 0;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
-  overflow: hidden;
-  white-space: normal;
-  text-overflow: ellipsis;
+  @include overflow($rows: 2);
 }
 
 @media (max-width: 1023px) {
@@ -305,8 +290,11 @@
 
 .cards_team {
   background-color: #FFFFFF;
-  overflow: hidden;
   width: 255px;
   height: 439px;
 }
 
+.cards__image_team {
+  width: 215px;
+  height: 286px;
+}

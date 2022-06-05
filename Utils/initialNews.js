@@ -141,37 +141,37 @@ export const initialPub = [
 export const initialTeam = [
     {
         image: './img/Team/photo_1_Bobtsov.jpg',
-        name: 'Бобцов Алексей Алексеевич',
+        name: 'Бобцов Алексей\u00a0Алексеевич',
         post: 'Директор, профессор, ДТН'
     },
     {
         image: './img/Team/photo_2_Bukhan.jpg',
-        name: 'Буханоский Александр Валерьевич',
+        name: 'Буханоский Александр\u00a0Валерьевич',
         post: 'Директор, руководитель, ДТН'
     },
     {
         image: './img/Team/photo_3_Murom.jpg',
-        name: 'Муромцев Дмитрий Ильич',
+        name: 'Муромцев Дмитрий\u00a0Ильич',
         post: 'Руководитель, доцент, КТН'
     },
     {
         image: './img/Team/photo_4_Matveev.jpg',
-        name: 'Матвеев Юрий Николаевич',
+        name: 'Матвеев Юрий\u00a0Николаевич',
         post: 'Руководитель, профессор, ДТН'
     },
     {
         image: './img/Team/photo_5_Shal.jpg',
-        name: 'Шалыто Анатолий Абрамович',
+        name: 'Шалыто Анатолий\u00a0Абрамович',
         post: 'Профессор, ДТН'
     },
     {
         image: './img/Team/photo_6_Kol.jpg',
-        name: 'Колюбин Сергей Алексеевич',
+        name: 'Колюбин Сергей\u00a0Алексеевич',
         post: 'Начальник, профессор, ДТН'
     },
     {
         image: './img/Team/photo_7_Prikin.jpg',
-        name: 'Пыркин Антон Александрович',
+        name: 'Пыркин Антон\u00a0Александрович',
         post: 'Декан, профессор, ДТН'
     },
 ]

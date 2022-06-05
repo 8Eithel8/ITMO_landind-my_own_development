@@ -19,16 +19,16 @@ export default class Team {
     generateCard() {
         // сохраняем разметку в приватное поле _element
         this._element = this._getTemplate();
-        this._cardTitle = this._element.querySelector('.cards__title');
-        this._cardImage = this._element.querySelector('.cards__image');
-        this._cardAuthors = this._element.querySelector('.cards__authors');
+        this._cardTitle = this._element.querySelector('.team__card-title');
+        this._cardImage = this._element.querySelector('.team__image');
+        this._cardMember = this._element.querySelector('.team__member');
 
 
         // Добавляем данные
         this._cardTitle.textContent = this.name;
         this._cardImage.src = this.image;
         this._cardImage.alt = 'фотография ' + this.name;
-        this._cardAuthors.textContent = this.post;
+        this._cardMember.textContent = this.post;
 
         // возвращаем элемент во внешнюю область
         return this._element;
