@@ -46,3 +46,27 @@
     prevEl: ".swiper-button-prev_light",
 },
 });
+
+let swiperTeam = new Swiper(".mySwiperTeam", {
+    slidesPerView: "auto",
+    spaceBetween: 30,
+
+    pagination: {
+        // el: ".swiper-pagination",
+        el: ".team__swiper-pagination",
+        clickable: true
+    },
+    breakpoints: {
+        1025: {
+            spaceBetween: 30
+        },
+        321: {
+            spaceBetween: 20
+        }
+    },
+
+    navigation: {
+        nextEl: "team__swiper-button-next_dark",
+        prevEl: "team__swiper-button-prev_dark",
+    },
+});

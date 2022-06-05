@@ -4,6 +4,10 @@
   background-image: linear-gradient($color-lightBlue 50%, $color-deepBlue 50%);
 }
 
+.team__wrapper{
+  @include flex();
+}
+
 .team__swiper-slide {
   width: 255px;
   height: 450px;
