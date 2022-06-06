@@ -1,0 +1,13 @@
+.partners {
+  background-color: $color-deepBlue;
+}
+
+.partners__list {
+  margin: 0 auto;
+  list-style: none;
+  @include flex();
+  max-width: 1110px;
+  min-height: 146px;
+  flex-wrap: wrap;
+  gap: 30px;
+}

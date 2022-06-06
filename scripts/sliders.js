@@ -1,5 +1,5 @@
 
-    let swiper = new Swiper(".mySwiper", {
+    new Swiper(".mySwiper", {
     slidesPerView: "auto",
     slidesPerGroup: 3,
     spaceBetween: 30,
@@ -22,7 +22,7 @@
     prevEl: ".swiper-button-prev_dark",
 },
 });
-    let swiperPub = new Swiper(".mySwiperPub", {
+    new Swiper(".mySwiperPub", {
     slidesPerView: "auto",
     slidesPerGroup: 3,
     spaceBetween: 30,
@@ -47,7 +47,7 @@
 },
 });
 
-let swiperTeam = new Swiper(".mySwiperTeam", {
+    new Swiper(".mySwiperTeam", {
     slidesPerView: "auto",
     spaceBetween: 30,
 

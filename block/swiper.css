@@ -183,3 +183,21 @@
 .publications__swiper-pagination > .swiper-pagination-bullet-active {
     opacity: 1 !important;
 }
+
+
+
+.team__swiper-pagination > .swiper-pagination-bullet {
+    background-color: white !important;
+    opacity: 0.5 !important;
+}
+
+.team__swiper-pagination > .swiper-pagination-bullet-active {
+    opacity: 1 !important;
+}
+
+@media (max-width: 767px) {
+    .swiper-pagination-bullet {
+        width: 4px;
+        height: 4px;
+    }
+}
