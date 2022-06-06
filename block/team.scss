@@ -7,6 +7,8 @@
 
 .team__wrapper{
   @include flex();
+  position: relative;
+  padding-bottom: 50px;
 }
 
 .team__swiper-slide {
