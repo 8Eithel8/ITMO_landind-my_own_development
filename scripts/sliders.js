@@ -18,8 +18,8 @@
 },
 
     navigation: {
-    nextEl: ".swiper-button-next_dark",
-    prevEl: ".swiper-button-prev_dark",
+    nextEl: ".news__swiper-button-next_dark",
+    prevEl: ".news__swiper-button-prev_dark",
 },
 });
     new Swiper(".mySwiperPub", {
@@ -51,6 +51,7 @@
     slidesPerView: "auto",
     spaceBetween: 30,
 
+
     pagination: {
         // el: ".swiper-pagination",
         el: ".team__swiper-pagination",
@@ -66,7 +67,7 @@
     },
 
     navigation: {
-        nextEl: "team__swiper-button-next_dark",
-        prevEl: "team__swiper-button-prev_dark",
+        nextEl: ".team__swiper-button-next_dark",
+        prevEl: ".team__swiper-button-prev_dark",
     },
 });

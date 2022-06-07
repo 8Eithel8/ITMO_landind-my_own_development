@@ -4,6 +4,7 @@ import Publications from '../components/Publications.js';
 import News from '../components/News.js';
 import Section from "../components/Section.js";
 import Team from "../components/Team.js";
+// import '../scripts/scripts.js';
 import { initialNews, initialPub, initialTeam } from "../Utils/initialNews.js";
 
 const cardTemplate = '#news-template';
