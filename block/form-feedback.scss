@@ -1,15 +1,34 @@
 .form-feedback {
-
+  width: 1113px;
+  margin: 0 auto;
 }
 
 .form-feedback__input-wrapper {
-
+  display: grid;
+  row-gap: 20px;
+  column-gap: 30px;
 }
 
 .form-feedback__field {
+  padding-left: 20px;
+  box-sizing: border-box;
+  width: 352px;
+  height: 60px;
+  border-radius: $border-radius-desktop;
+  border: none;
+  @include font-style($height: 28px, $color: $color-emerland);
+}
 
+.form-feedback__field::-webkit-input-placeholder {
+  color: $color-emerland;
 }
 
 .form-feedback__button {
-
+  width: 352px;
+  height: 60px;
+  border-radius: $border-radius-desktop;
+  background-color: transparent;
+  border: 1px solid #FFFFFF;
+  @include font-style($weight: 600, $color: $color-white);
+  text-transform: uppercase;
 }
