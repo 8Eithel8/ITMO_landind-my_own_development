@@ -6,10 +6,6 @@
   color: $color;
 }
 
-//@mixin arrow($size: 7px) {
-//
-//}
-
 @mixin flex($justify-content: space-between) {
   display: flex;
   justify-content: $justify-content;
