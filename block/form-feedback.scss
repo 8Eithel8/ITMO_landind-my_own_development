@@ -1,6 +1,6 @@
 .form-feedback {
   width: 1113px;
-  margin: 0 auto;
+  margin: 60px auto 0 auto;
   display: grid;
   grid-template-columns: repeat(3, min-content);
   grid-auto-rows: min-content;
@@ -37,6 +37,6 @@
   border: 1px solid #FFFFFF;
   @include font-style($weight: 600, $color: $color-white);
   text-transform: uppercase;
-  margin: 37px auto 0 auto;
+  margin: 30px auto 0 auto;
   grid-column: 2/2;
 }
