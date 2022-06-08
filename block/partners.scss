@@ -1,13 +1,19 @@
 .partners {
   background-color: $color-deepBlue;
+  padding-bottom: 80px;
 }
 
 .partners__list {
-  margin: 0 auto;
+  margin: 100px auto 0 auto;
   list-style: none;
   @include flex();
   max-width: 1110px;
   min-height: 146px;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 35px;
+}
+
+.partners__item {
+  height: 48px;
+  object-fit: contain;
 }

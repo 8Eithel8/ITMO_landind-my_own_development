@@ -7,7 +7,7 @@
 .research__wrapper-texts {
   width: 1146px;
   @include flex;
-  margin: 60px 0;
+  margin: 60px 0 80px 0;
 }
 
 .research__text {
@@ -15,12 +15,14 @@
   max-width: 540px;
   letter-spacing: 0.1px;
   padding-left: 36px;
+  margin: 0;
 }
 
 .research__text:last-of-type {
-  @include font-style($weight: 300, $height: 26px, $color: $color-darkBlue);
+  @include font-style($weight: 300, $size: 18px, $height: 26px, $color: $color-darkBlue);
   letter-spacing: 0.1px;
   position: relative;
+  margin-top: 25px;
 }
 
 .research__text:last-of-type::after {
@@ -47,10 +49,12 @@
 }
 
 .research__grid {
+  max-width: 1110px;
   list-style: none;
   @include flex();
   gap: 30px;
-  //max-width: 1120px;
+  margin: 0 auto;
+  padding-left: 35px;
 }
 
 .research__card {
@@ -58,7 +62,7 @@
   width: 255px;
   height: 430px;
   box-shadow: $card-shadow;
-  padding: 0px 20px 20px 20px;
+  padding: 12px 20px 20px 20px;
   @include flex();
   flex-direction: column;
   align-items: center;
@@ -67,7 +71,7 @@
   transform: translateY(0px);
   transition: transform 0.6s ease;
 }
-//TODO сделать плавный переход цвета
+
 .research__card:hover {
   transform: translateY(-20px);
   background-color: $color-emerland;
@@ -88,9 +92,14 @@
   max-width: 80px;
 }
 
+.research__icon {
+  margin-bottom: 10px;
+}
+
 .research__card-text {
   @include font-style($size: 14px, $height: 20px, $color: $color-deepBlue);
   text-align: center;
+  margin: 0 0 32px 0;
 }
 
 .research__link {

@@ -1,14 +1,14 @@
 .team {
   max-width: 1440px;
   min-height: 595px;
-  background-image: linear-gradient($color-lightBlue 40%, $color-deepBlue 40%);
-  padding-bottom: 90px;
+  background-image: linear-gradient($color-lightBlue 42.75%, $color-deepBlue 42.75%);
+  padding: 6px 0 80px 0;
 }
 
 .team__wrapper{
   @include flex();
   position: relative;
-  padding-bottom: 50px;
+  padding-bottom: 40px;
 }
 
 .team__swiper-slide {
@@ -21,14 +21,14 @@
   flex-direction: column;
   align-items: center;
   width: 255px;
-  height: 450px;
+  height: 440px;
   background-color: #FFFFFF;
   box-sizing: border-box;
   border-radius: $border-radius-desktop;
   padding: $padding-inside-card;
   flex-shrink: 0;
-  margin-top: 15px;
-  margin-right: 10px;
+  margin: 15px 10px 0 0;
+  //margin-right: 10px;
 }
 
 .team__image {
@@ -39,8 +39,10 @@
 .team__card-title {
  @include font-style($weight: 600, $color: $color-darkBlue);
   text-align: center;
+  margin: 18px 0 0 0;
 }
 
 .team__member {
   @include text-italic-color;
+  margin: 0;
 }
