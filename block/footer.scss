@@ -1,0 +1,78 @@
+.footer {
+  background-color: $color-deepBlue;
+  padding: 80px 165px;
+}
+
+.footer__logo {
+  width: 150px;
+  height: 54px;
+  margin: 0;
+}
+
+.footer__container {
+  max-width: 1110px;
+  margin: 30px auto 0 auto;
+  @include flex();
+}
+
+.footer__texts {
+  @include font-style($size: 14px, $height: 19px, $color: $color-white);
+  max-width: 263px;
+}
+
+.footer__text {
+  margin: 0 0 30px 0;
+}
+
+.footer__column-heading {
+  @include font-style($weight: 600, $size: 14px, $height: 19px);
+  margin: 0 0 12px 0;
+}
+
+.footer__column-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer__column-item {
+  margin-bottom: 8px;
+}
+
+.footer__column-link {
+  @include font-style($weight: 400, $size: 14px, $height: 19px);
+  text-decoration: none;
+}
+
+.footer__contacts {
+  @include flex();
+  flex-direction: column;
+  max-width: 206px;
+  min-height: 270px;
+}
+
+.footer__contacts-heading {
+  @include font-style($weight: 600);
+  margin: 0;
+}
+
+.footer__contact_phone {
+  margin: 0;
+}
+
+.footer__contact {
+  @include font-style($weight: 400, $size: 14px, $height: 19px);
+}
+
+.footer__copyright {
+  @include font-style($weight: 400, $size: 14px, $height: 19px);
+  opacity: .5;
+  margin: 0;
+}
+
+.footer__social {
+  margin-top: 50px;
+}
+
+.footer__social-icon {
+  margin-right: 8px;
+}
