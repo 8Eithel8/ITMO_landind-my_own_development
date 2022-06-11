@@ -1,0 +1,24 @@
+.projects {
+  max-width: 1440px;
+  background-color: $color-deepBlue;
+  padding: 80px 0 60px 0;
+}
+
+.projects__list {
+  max-width: 1110px;
+  margin: 30px auto 60px auto;
+  list-style: none;
+  padding: 0;
+  @include flex();
+}
+
+.projects__item {
+  @include font-style($size: 16px, $height: 22px);
+  text-transform: uppercase;
+  width: 278px;
+  text-align: center;
+}
+
+.projects__item:hover {
+  border-bottom: 5px solid $color-emerland;
+}

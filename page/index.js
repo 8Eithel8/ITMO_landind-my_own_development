@@ -4,7 +4,7 @@ import Publications from '../components/Publications.js';
 import News from '../components/News.js';
 import Section from "../components/Section.js";
 import Team from "../components/Team.js";
-// import '../scripts/scripts.js';
+import {setupListenersSocialPopup} from "../scripts/scripts.js";
 import { initialNews, initialPub, initialTeam } from "../Utils/initialNews.js";
 
 const cardTemplate = '#news-template';
@@ -50,21 +50,20 @@ const sectionPub = new Section(
     '.publications__swiper-wrapper'
 );
 
-
 sectionPub.renderAll();
 
 //создаем карточки команды
-const cardTemplateTeam = '#team';
 
+const cardTemplateTeam = '#team';
 function createCardTeam(data) {
+
     const team = new Team(data, cardTemplateTeam);
     return team.generateCard();
 }
-
 function addCardTeam(data) {
+
     sectionTeam.addItem(createCardTeam(data));
 };
-
 const sectionTeam = new Section(
     {
         items: initialTeam,
@@ -73,5 +72,8 @@ const sectionTeam = new Section(
     '.team__swiper-wrapper'
 );
 
-
 sectionTeam.renderAll();
+
+
+
+setupListenersSocialPopup();

@@ -1,11 +1,10 @@
 //все это надо импортнуть в index.js buttonSocialShare  не существует пока мы не отрисуем карточку.
+
 const popupSocial = document.querySelector('.popup_social-block');
-const buttonSocialShare = document.querySelector('.cards__link-social');
-const buttonsSocialShare = document.querySelectorAll('.cards__link-social');
+// const buttonSocialShare = document.querySelector('.cards__link-social');
+// const buttonsSocialShare = document.querySelectorAll('.cards__link-social');
 const popupContainer = document.querySelector('.popup__container');
 const buttonsIconSocial =  popupSocial.querySelectorAll('.popup__social-icon');
-
-console.log(buttonSocialShare);
 
 function getXY(button) {
     const buttonXY = button.getBoundingClientRect();
@@ -27,11 +26,11 @@ function openPopup(button) {
     getXY(button);
     popupSocial.classList.add('popup_opened');
     document.addEventListener('keydown', closePopupByEsc);
+    document.addEventListener('scroll', closePopupByScroll);
 };
 
-const buttonXY = buttonSocialShare.getBoundingClientRect();
-console.log(buttonXY);
-
+//const buttonXY = buttonSocialShare.getBoundingClientRect();
+//TODO найти класс для ховера карточки и доавить его в openpopup? при закрытии удалять
 
 /*закрываем попап по клавише*/
 function closePopupByEsc(evt) {
@@ -51,11 +50,20 @@ function closeOverlay(evt) {
 function closePopup(popup) {
     popup.classList.remove('popup_opened');
     document.removeEventListener('keydown', closePopupByEsc);
+    document.removeEventListener('scroll', closePopupByScroll);
 };
 
-popupSocial.addEventListener('click', closeOverlay);
-document.addEventListener('keydown', closePopupByEsc);
-buttonsSocialShare.forEach(button => button.addEventListener('click', () => openPopup(button)));
-buttonsIconSocial.forEach(button => button.addEventListener('click', () => closePopup(popupSocial)));
-document.addEventListener('scroll', () => closePopup(popupSocial));
+function closePopupByScroll () {
+    closePopup(popupSocial)
+};
+
+function setupListenersSocialPopup() {
+    popupSocial.addEventListener('click', closeOverlay);
+    const buttonsSocialShare = document.querySelectorAll('.cards__link-social');
+    // console.log(buttonsSocialShare);
+    buttonsSocialShare.forEach(button => button.addEventListener('click', () => openPopup(button)));
+    buttonsIconSocial.forEach(button => button.addEventListener('click', () => closePopup(popupSocial)));
+}
+
+export {setupListenersSocialPopup};
 
