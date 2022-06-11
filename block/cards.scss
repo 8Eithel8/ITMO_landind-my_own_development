@@ -303,5 +303,39 @@
   width: 254px;
   height: 307px;
   background-color: $color-emerland;
-  //background-image: ;
+  position: relative;
+  box-sizing: border-box;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.cards_project::before {
+  width: 254px;
+  height: 307px;
+  content: '';
+  position: absolute;
+  background-image: url("../img/Projects/project_gazprom.png");
+  z-index: -1;
+  background-size: cover;
+  top: 0;
+  left: 0;
+}
+
+.cards__text_projects {
+  margin: 20px 0;
+}
+
+.cards__text_projects {
+  @include font-style($weight: 400, $size: 14px, $height: 20px, $color: $color-white);
+}
+
+.cards__link-details {
+  @include font-style($weight: 600, $size: 14px, $height: 19px, $color: $color-white);
+  text-decoration: none;
+  margin: 0;
+}
+
+.projects__swiper-slide {
+  width: 254px;
+  height: 307px;
 }
