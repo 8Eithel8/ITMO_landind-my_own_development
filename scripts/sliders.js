@@ -71,3 +71,27 @@
         prevEl: ".team__swiper-button-prev_dark",
     },
 });
+
+new Swiper(".mySwiperProject", {
+    slidesPerView: "auto",
+    spaceBetween: 30,
+
+
+    pagination: {
+        el: ".projects-block__swiper-pagination",
+        type: "fraction",
+    },
+    breakpoints: {
+        1025: {
+            spaceBetween: 30
+        },
+        321: {
+            spaceBetween: 20
+        }
+    },
+
+    navigation: {
+        nextEl: ".swiper-button-next_projects-block",
+        prevEl: ".swiper-button-prev_projects-block",
+    },
+});

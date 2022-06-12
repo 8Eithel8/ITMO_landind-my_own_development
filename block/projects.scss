@@ -2,11 +2,13 @@
   max-width: 1440px;
   background-color: $color-deepBlue;
   padding: 80px 0 60px 0;
+  @include flex();
+  flex-direction: column;
+  align-items: center;
 }
 
 .projects__list {
   max-width: 1110px;
-  margin: 30px auto 60px auto;
   list-style: none;
   padding: 0;
   @include flex();
@@ -17,8 +19,19 @@
   text-transform: uppercase;
   width: 278px;
   text-align: center;
+  border-bottom: 5px solid transparent;
 }
 
 .projects__item:hover {
   border-bottom: 5px solid $color-emerland;
+}
+
+.projects-block {
+}
+
+.projects-block__control {
+  margin: 0 auto;
+  max-width: 224px;
+  @include flex();
+  margin-top: 30px;
 }
