@@ -1,10 +1,12 @@
+// research__link
+
 //все это надо импортнуть в index.js buttonSocialShare  не существует пока мы не отрисуем карточку.
 
-const popupSocial = document.querySelector('.popup_social-block');
+const popupResearch = document.querySelector('.popup_social-block');
 // const buttonSocialShare = document.querySelector('.cards__link-social');
 // const buttonsSocialShare = document.querySelectorAll('.cards__link-social');
 const popupContainer = document.querySelector('.popup__container');
-const buttonsIconSocial =  popupSocial.querySelectorAll('.popup__social-icon');
+const buttonsIconSocial =  popupSocial.querySelectorAll('.research__link');
 
 function getXY(button) {
     const buttonXY = button.getBoundingClientRect();
@@ -66,4 +68,3 @@ function setupListenersSocialPopup() {
 }
 
 export {setupListenersSocialPopup};
-

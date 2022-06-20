@@ -7,11 +7,14 @@
   top: 0;
   justify-content: center;
   align-items: center;
-  background-color: transparent;
   opacity: 0;
   /*transition: all .5s ease;*/
   visibility: hidden;
   z-index: 1;
+}
+
+.popup_social-block {
+  background-color: transparent;
 }
 
 .popup_opened {
@@ -20,7 +23,7 @@
   opacity: 1;
 }
 
-.popup__container {
+.popup__container_social-block {
   position: absolute;
   top: 0;
   left: 0;
@@ -37,7 +40,7 @@
   margin: 0;
 }
 
-.popup__container:after {
+.popup__container_social-block:after {
   content: '';
   position: absolute;
   left: calc(50% - 16px/2);
@@ -53,3 +56,99 @@
 .popup__social-icon:hover {
   opacity: 0.5;
 }
+
+.popup_research {
+  background-color: rgba(0, 13, 38, 0.6);
+  z-index: 10;
+}
+
+.popup__container_research {
+  @include flex();
+  background-color: $color-white;
+  width: 1110px;
+  //max-width: 1110px;
+  min-height: 718px;
+  padding: 20px;
+  border-radius: $border-radius-desktop;
+  box-sizing: border-box;
+
+  @media (max-width: 1279px) {
+    max-width: 690px;
+    min-height: 454px;
+  }
+
+  @media (max-width: 767px) {
+    @include flex();
+    flex-direction: column;
+    max-width: 300px;
+    min-height: 444px;
+    padding: 16px;
+  }
+}
+
+.popup__image-research {
+  width: 400px;
+  height: 678px;
+  border-radius: $border-radius-desktop;
+  object-fit: cover;
+
+  @media (max-width: 1279px) {
+    width: 199px;
+    height: 414px;
+  };
+
+  @media (max-width: 767px) {
+    width: 268px;
+    height: 160px;
+  };
+}
+
+.popup__texts {
+  max-width: 650px;
+}
+
+.popup__title {
+  @include font-style($weight: 600, $color: $color-darkBlue);
+  margin: 0;
+
+  @media (max-width: 1279px) {
+    @include font-style($weight: 600, $size: 14px, $height: 19px, $color: $color-darkBlue);
+  }
+}
+
+.popup__text,
+.popup__list-research {
+  @include font-style($weight: 400, $size: 18px, $height: 24.5px, $color: $color-darkBlue);
+
+  @media (max-width: 1279px) {
+    @include font-style($size: 14px, $height: 19px, $color: $color-darkBlue);
+  };
+
+  @media (max-width: 767px) {
+    @include font-style($size: 12px, $height: 16.5px, $color: $color-darkBlue);
+  };
+}
+
+.popup__list-research {
+  @media (max-width: 767px) {
+    padding-left: 20px;
+  }
+}
+
+.popup__text_hidden-tab {
+  @media (max-width: 1279px) {
+    display: none;
+  }
+}
+
+
+.popup__text_hidden-mobile {
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+
+//.popup__text_hidden-tab
+//.popup__list-research {
+//
+//}

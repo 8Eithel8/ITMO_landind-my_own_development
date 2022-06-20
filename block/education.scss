@@ -88,7 +88,7 @@
   cursor: pointer;
 }
 
-.education__button_active {
+.education__button_hidden {
   background-color: $color-lightBlue;
   @include font-style($weight: 600, $color: $color-darkBlue);
 }
