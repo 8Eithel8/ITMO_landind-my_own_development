@@ -4,7 +4,8 @@ import Publications from '../components/Publications.js';
 import News from '../components/News.js';
 import Section from "../components/Section.js";
 import Team from "../components/Team.js";
-import {setupListenersSocialPopup} from "../scripts/scripts.js";
+import {setupListenersSocialPopup} from "../components/popupWithSocialButtons.js";
+import {setupListenersPopup} from "../components/popupWithResearch.js";
 import { initialNews, initialPub, initialTeam } from "../Utils/initialNews.js";
 
 const cardTemplate = '#news-template';
@@ -76,4 +77,8 @@ sectionTeam.renderAll();
 
 
 
+setupListenersPopup();
 setupListenersSocialPopup();
+
+
+

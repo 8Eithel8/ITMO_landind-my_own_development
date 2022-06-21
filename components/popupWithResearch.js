@@ -1,38 +1,23 @@
 // research__link
 
-//все это надо импортнуть в index.js buttonSocialShare  не существует пока мы не отрисуем карточку.
+const popupResearch = document.querySelector('.popup_research');
+const buttonsOpenPopup = document.querySelectorAll('.cards__button-details');
+const buttonOpenPopup = document.querySelector('.cards__button-details');
+const buttonClosePopup =  popupResearch.querySelector('.popup__button_close');
+const buttonsClosePopup =  popupResearch.querySelectorAll('.popup__button_close');
 
-const popupResearch = document.querySelector('.popup_social-block');
-// const buttonSocialShare = document.querySelector('.cards__link-social');
-// const buttonsSocialShare = document.querySelectorAll('.cards__link-social');
-const popupContainer = document.querySelector('.popup__container');
-const buttonsIconSocial =  popupSocial.querySelectorAll('.research__link');
 
-function getXY(button) {
-    const buttonXY = button.getBoundingClientRect();
-    const windowWidth = document.documentElement.clientWidth;
-    let newX = buttonXY.left;
-    console.log(newX);
-    let newY = buttonXY.top;
-    if (newX > (windowWidth * 0.82)) {
-        popupContainer.style.top = (newY - 80) + "px";
-        popupContainer.style.left = (newX - 140) + "px";
-    }  else {
-        popupContainer.style.top = (newY - 80) + "px";
-        popupContainer.style.left = (newX - 80) + "px";
-    };
-};
+// buttonOpenPopup.addEventListener('click', () => console.log('хрен'));
 
-/*открываем попап c соцсетями*/
-function openPopup(button) {
-    getXY(button);
-    popupSocial.classList.add('popup_opened');
+/*открываем попап*/
+function openPopup() {
+    console.log('хрен');
+    popupResearch.classList.add('popup_opened');
     document.addEventListener('keydown', closePopupByEsc);
-    document.addEventListener('scroll', closePopupByScroll);
+    buttonClosePopup.addEventListener('click', closePopup);
 };
 
 //const buttonXY = buttonSocialShare.getBoundingClientRect();
-//TODO найти класс для ховера карточки и доавить его в openpopup? при закрытии удалять
 
 /*закрываем попап по клавише*/
 function closePopupByEsc(evt) {
@@ -52,19 +37,16 @@ function closeOverlay(evt) {
 function closePopup(popup) {
     popup.classList.remove('popup_opened');
     document.removeEventListener('keydown', closePopupByEsc);
-    document.removeEventListener('scroll', closePopupByScroll);
+    buttonOpenPopup.removeEventListener('click', closePopup);
+
 };
 
-function closePopupByScroll () {
-    closePopup(popupSocial)
-};
 
-function setupListenersSocialPopup() {
-    popupSocial.addEventListener('click', closeOverlay);
-    const buttonsSocialShare = document.querySelectorAll('.cards__link-social');
-    // console.log(buttonsSocialShare);
-    buttonsSocialShare.forEach(button => button.addEventListener('click', () => openPopup(button)));
-    buttonsIconSocial.forEach(button => button.addEventListener('click', () => closePopup(popupSocial)));
+function setupListenersPopup() {
+    const buttonOpenPopup = document.querySelector('.cards__button-details');
+    popupResearch.addEventListener('click', closeOverlay);
+    buttonsOpenPopup.forEach(button => button.addEventListener('click', () => openPopup(buttonOpenPopup)));
+    buttonsClosePopup.forEach(button => button.addEventListener('click', () => closePopup(popupResearch)));
 }
 
-export {setupListenersSocialPopup};
+export {setupListenersPopup};

@@ -335,6 +335,21 @@
   margin: 0;
 }
 
+.cards__button-details {
+  @include font-style($weight: 600, $size: 14px, $height: 19px, $color: $color-darkBlue);
+  margin: 0;
+  border-radius: $border-radius-desktop;
+  width: 100%;
+  background-color: transparent;
+  padding: 11px 0;
+}
+
+.cards__button-details:hover {
+  @include font-style($weight: 600, $size: 14px, $height: 19px, $color: $color-white);
+  border: 1px solid $color-white;
+  cursor: pointer;
+}
+
 .projects__swiper-slide {
   width: 254px;
   height: 307px;
