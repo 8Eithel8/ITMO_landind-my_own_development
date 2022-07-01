@@ -5,13 +5,34 @@
   z-index: 1;
   @include flex();
   padding: 13px 165px 13px 165px;
+
+  @media (max-width: 1023px) {
+    justify-content: center;
+  }
+}
+
+.header__button-burger {
+  display: none;
+  @media (max-width: 1023px) {
+    display: block;
+    background-image: url("../img/icons/Burger_menu.svg");
+    background-color: transparent;
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    flex-grow: 1;
+    }
 }
 
 .header__logo {
   width: 150px;
   height: 54px;
   object-fit: contain;
+  @media (max-width: 1023px) {
+    flex-grow: 2;
+  }
 }
+
 
 .header__navigation-links {
   list-style: none;
@@ -19,6 +40,10 @@
   @include font-style(400, 14px, 24px);
   width: 825px;
   min-height: 35px;
+
+  @media (max-width: 1023px) {
+    display: none;
+  }
 
 }
 
