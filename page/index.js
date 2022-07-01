@@ -1,6 +1,4 @@
-
 import Publications from '../components/Publications.js';
-// import './index.css';
 import News from '../components/News.js';
 import Section from "../components/Section.js";
 import Team from "../components/Team.js";
@@ -28,9 +26,7 @@ const sectionNews = new Section(
     '.news__swiper-wrapper'
 );
 
-
 sectionNews.renderAll();
-
 
 //создаем карточки публикаций
 const cardTemplatePub = '#publications';
@@ -75,8 +71,6 @@ const sectionTeam = new Section(
 );
 
 sectionTeam.renderAll();
-
-
 
 setupListenersPopup();
 setupListenersSocialPopup();

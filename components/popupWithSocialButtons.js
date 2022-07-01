@@ -1,8 +1,4 @@
-//все это надо импортнуть в index.js buttonSocialShare  не существует пока мы не отрисуем карточку.
-
 const popupSocial = document.querySelector('.popup_social-block');
-// const buttonSocialShare = document.querySelector('.cards__link-social');
-// const buttonsSocialShare = document.querySelectorAll('.cards__link-social');
 const popupContainer = document.querySelector('.popup__container');
 const buttonsIconSocial =  popupSocial.querySelectorAll('.popup__social-icon');
 
@@ -29,8 +25,6 @@ function openPopup(button) {
     document.addEventListener('scroll', closePopupByScroll);
 };
 
-//const buttonXY = buttonSocialShare.getBoundingClientRect();
-//TODO найти класс для ховера карточки и доавить его в openpopup? при закрытии удалять
 
 /*закрываем попап по клавише*/
 function closePopupByEsc(evt) {
@@ -58,9 +52,8 @@ function closePopupByScroll () {
 };
 
 function setupListenersSocialPopup() {
-    popupSocial.addEventListener('click', closeOverlay);
     const buttonsSocialShare = document.querySelectorAll('.cards__link-social');
-    // console.log(buttonsSocialShare);
+    popupSocial.addEventListener('click', closeOverlay);
     buttonsSocialShare.forEach(button => button.addEventListener('click', () => openPopup(button)));
     buttonsIconSocial.forEach(button => button.addEventListener('click', () => closePopup(popupSocial)));
 }

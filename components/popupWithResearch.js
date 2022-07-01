@@ -1,13 +1,8 @@
-// research__link
-
 const popupResearch = document.querySelector('.popup_research');
 const buttonsOpenPopup = document.querySelectorAll('.cards__button-details');
 const buttonOpenPopup = document.querySelector('.cards__button-details');
 const buttonClosePopup =  popupResearch.querySelector('.popup__button_close');
 const buttonsClosePopup =  popupResearch.querySelectorAll('.popup__button_close');
-
-
-// buttonOpenPopup.addEventListener('click', () => console.log('хрен'));
 
 /*открываем попап*/
 function openPopup() {
@@ -16,8 +11,6 @@ function openPopup() {
     document.addEventListener('keydown', closePopupByEsc);
     buttonClosePopup.addEventListener('click', closePopup);
 };
-
-//const buttonXY = buttonSocialShare.getBoundingClientRect();
 
 /*закрываем попап по клавише*/
 function closePopupByEsc(evt) {
@@ -40,7 +33,6 @@ function closePopup(popup) {
     buttonOpenPopup.removeEventListener('click', closePopup);
 
 };
-
 
 function setupListenersPopup() {
     const buttonOpenPopup = document.querySelector('.cards__button-details');
