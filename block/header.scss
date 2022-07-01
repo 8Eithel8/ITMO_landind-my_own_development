@@ -1,13 +1,18 @@
 .header {
   max-width: 1440px;
-  height: 53px;
+  //height: 53px;
   background-color: $color-darkBlue;
   z-index: 1;
   @include flex();
   padding: 13px 165px 13px 165px;
 
   @media (max-width: 1023px) {
-    justify-content: center;
+    justify-content: start;
+    padding-left: 39px;
+  }
+
+  @media (max-width: 767px) {
+    padding: 10px 16px;
   }
 }
 
@@ -21,6 +26,7 @@
     height: 24px;
     background-repeat: no-repeat;
     flex-grow: 1;
+    flex-shrink: 0;
     }
 }
 
@@ -29,6 +35,8 @@
   height: 54px;
   object-fit: contain;
   @media (max-width: 1023px) {
+    width: 95px;
+    height: 32px;
     flex-grow: 2;
   }
 }
