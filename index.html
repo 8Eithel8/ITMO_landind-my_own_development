@@ -12,17 +12,20 @@
 
 <body class="page">
   <header class="header">
-    <button class="header__button-burger" type="button"></button>
+    <input id="header__toggle" type="checkbox" />
+    <label class="header__button-burger" for="header__toggle">
+      <span></span>
+    </label>
     <img class="header__logo" src="./img/Logo_AI 1.png" alt="Логотип ИТМО">
-    <nav>
+    <nav class="header__nav">
       <ul class="header__navigation-links">
-        <li class="header__navigation-link">О нас</li>
-        <li class="header__navigation-link">Лаборатория</li>
-        <li class="header__navigation-link">Проекты</li>
-        <li class="header__navigation-link">Образование</li>
-        <li class="header__navigation-link">Публикации</li>
-        <li class="header__navigation-link">Команда</li>
-        <li class="header__navigation-link">Связаться</li>
+        <li class="header__navigation-item"><a class="header__navigation-link" href="#about">О нас</a></li>
+        <li class="header__navigation-item"><a class="header__navigation-link" href="#research">Лаборатория</a></li>
+        <li class="header__navigation-item"><a class="header__navigation-link" href="#projects">Проекты</a></li>
+        <li class="header__navigation-item"><a class="header__navigation-link" href="#education">Образование</a></li>
+        <li class="header__navigation-item"><a class="header__navigation-link" href="#publication">Публикации</a></li>
+        <li class="header__navigation-item"><a class="header__navigation-link" href="#teams">Команда</a></li>
+        <li class="header__navigation-item"><a class="header__navigation-link" href="#contacts">Связаться</a></li>
       </ul>
     </nav>
   </header>
@@ -36,7 +39,7 @@
         <a class="about-project__button" href="#">наши проекты</a>
       </div>
       
-      <h2 class="section-title">несколько слов о нас</h2>
+      <h2 class="section-title" id="about">несколько слов о нас</h2>
       <p class="section-text">Национальный центр когнитивных разработок – центр национальной технологической инициативы (НТИ),
           получивший государственную поддержку по направлению «Технологии машинного обучения и когнитивные технологии».</p>
       
@@ -53,7 +56,7 @@
     </section>
 
     <section class="research">
-      <h2 class="section-title section-title_dark">industrial ai research lab</h2>
+      <h2 class="section-title section-title_dark" id="research">industrial ai research lab</h2>
       <div class="research__wrapper-texts">
         <div class="research__texts">
           <p class="research__text">Центр национальной технологической инициативы (НТИ), получивший государственную поддержку
@@ -101,7 +104,7 @@
     </section>
 
     <section class="projects">
-      <h2 class="section-title">наши проекты</h2>
+      <h2 class="section-title" id="projects">наши проекты</h2>
       <ul class="projects__list">
         <li class="projects__item">все проекты</li>
         <li class="projects__item">гос. проекты</li>
@@ -166,7 +169,7 @@
 
 
     <section class="education">
-      <h2 class="section-title">образование</h2>
+      <h2 class="section-title" id="education">образование</h2>
       <p class="education__text">В образовательной деятельности НЦКР активно использует существующую в Университете ИТМО
         инфраструктуру и опыт реализации сетевых форм обучения, опираясь на вузы-диссеминаторы (ННГУ, ДВФУ, ФГБОУ ВО
         «МГТУ «СТАНКИН», НовГУ), а также профильную компанию ООО «НЦЭО» в области электронного и дистанционного
@@ -214,7 +217,7 @@
 
 
     <section class="publications">
-      <h2 class="section-title section-title_dark">Публикации</h2>
+      <h2 class="section-title section-title_dark" id="publication">Публикации</h2>
       <div class="publications__wrapper">
         <div class="swiper-button-prev swiper-button-prev_light"></div>
     <!-- Swiper -->
@@ -230,7 +233,7 @@
     </section>
 
     <section class="team">
-      <h2 class="section-title section-title_dark">наша команда</h2>
+      <h2 class="section-title section-title_dark" id="teams">наша команда</h2>
       <div class="team__wrapper">
         <div class="swiper-button-prev swiper-button-prev_dark team__swiper-button-prev_dark"></div>
         <!-- Swiper -->
@@ -270,7 +273,7 @@
     </section>
 
     <section class="feedback">
-      <h2 class="section-title">всегда на связи</h2>
+      <h2 class="section-title" id="contacts">всегда на связи</h2>
       <p class="section-text">По всем интересующим вас вопросам вы всегда можете обратиться по указанным телефонам, написать на почту или оставтиь свое сообщение через форму обратной связи.</p>
       <form class="form-feedback">
           <input class="form-feedback__field" type="text" placeholder="Имя" name="name">
