@@ -9,13 +9,14 @@
 }
 
 .form-feedback__field {
+  color: $color-emerland;
   padding-left: 20px;
   box-sizing: border-box;
   width: 352px;
   height: 60px;
   border-radius: $border-radius-desktop;
   border: none;
-  @include font-style($height: 28px, $color: $color-emerland);
+  @include font-style($height: 28px);
 }
 
 .form-feedback__field::-webkit-input-placeholder {
@@ -30,12 +31,13 @@
 }
 
 .form-feedback__button {
+  color: $color-white;
   width: 352px;
   height: 60px;
   border-radius: $border-radius-desktop;
   background-color: transparent;
   border: 1px solid #FFFFFF;
-  @include font-style($weight: 600, $color: $color-white);
+  @include font-style($weight: 600);
   text-transform: uppercase;
   margin: 30px auto 0 auto;
   grid-column: 2/2;

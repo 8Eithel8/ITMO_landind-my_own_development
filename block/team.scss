@@ -17,7 +17,7 @@
 }
 
 .team__card {
-@include flex();
+  @include flex();
   flex-direction: column;
   align-items: center;
   width: 255px;
@@ -36,7 +36,8 @@
 }
 
 .team__card-title {
- @include font-style($weight: 600, $color: $color-darkBlue);
+  color: $color-darkBlue;
+  @include font-style($weight: 600);
   text-align: center;
   margin: 18px 0 0 0;
 }

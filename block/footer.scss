@@ -16,7 +16,8 @@
 }
 
 .footer__texts {
-  @include font-style($size: 14px, $height: 19px, $color: $color-white);
+  color: $color-white;
+  @include font-style($size: 14px, $height: 19px);
   max-width: 263px;
 }
 

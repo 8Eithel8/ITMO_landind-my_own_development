@@ -27,7 +27,8 @@
 }
 
 .education__subtitle {
-  @include font-style($weight:600, $color: $color-darkBlue);
+  color: $color-darkBlue;
+  @include font-style($weight:600);
   margin: 0;
 }
 
@@ -36,11 +37,13 @@
 }
 
 .education__item {
-  @include font-style($color: $color-darkBlue);
+  color: $color-darkBlue;
+  @include font-style();
 }
 
 .education__link-list {
-  @include font-style($weight:600, $height: 20px, $color: $color-darkBlue);
+  color: $color-darkBlue;
+  @include font-style($weight:600, $height: 20px);
   text-decoration: none;
   margin-top: 20px;
   position: relative;
@@ -76,11 +79,12 @@
 }
 
 .education__button {
+  color: $color-lightBlue;
   width: 279px;
   background-color: transparent;
   border-radius: $border-radius-desktop;
   border: none;
-  @include font-style($weight: 600, $color: $color-lightBlue);
+  @include font-style($weight: 600);
   text-transform: uppercase;
 }
 
@@ -89,8 +93,9 @@
 }
 
 .education__button_hidden {
+  color: $color-darkBlue;
   background-color: $color-lightBlue;
-  @include font-style($weight: 600, $color: $color-darkBlue);
+  @include font-style($weight: 600);
 }
 
 .hidden {

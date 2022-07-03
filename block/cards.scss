@@ -326,17 +326,20 @@
 }
 
 .cards__text_projects {
-  @include font-style($weight: 400, $size: 14px, $height: 20px, $color: $color-white);
+  color: $color-white;
+  @include font-style($weight: 400, $size: 14px, $height: 20px);
 }
 
 .cards__link-details {
-  @include font-style($weight: 600, $size: 14px, $height: 19px, $color: $color-white);
+  color: $color-white;
+  @include font-style($weight: 600, $size: 14px, $height: 19px);
   text-decoration: none;
   margin: 0;
 }
 
 .cards__button-details {
-  @include font-style($weight: 600, $size: 14px, $height: 19px, $color: $color-darkBlue);
+  color: $color-darkBlue;
+  @include font-style($weight: 600, $size: 14px, $height: 19px);
   margin: 0;
   border-radius: $border-radius-desktop;
   width: 100%;
@@ -345,7 +348,8 @@
 }
 
 .cards__button-details:hover {
-  @include font-style($weight: 600, $size: 14px, $height: 19px, $color: $color-white);
+  color: $color-white;
+  @include font-style($weight: 600, $size: 14px, $height: 19px);
   border: 1px solid $color-white;
   cursor: pointer;
 }

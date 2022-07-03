@@ -13,43 +13,47 @@
   @media (max-width: 767px) {
     flex-direction: column;
     align-items: center;
+    margin: 20px 0;
+    gap: 0;
   }
 }
 
 .research__texts {
   @media (max-width: 767px) {
-    order: 2
+    order: 2;
   }
 }
 
 .research__text {
-  @include font-style($color: $color-darkBlue);
+  color: $color-darkBlue;
+  @include font-style();
   max-width: 540px;
   letter-spacing: 0.1px;
   //padding-left: 36px;
   margin: 0;
 
   @media (max-width: 1023px) {
-    @include font-style($size: 14px, $height: 20px, $color: $color-darkBlue);
+    @include font-style($size: 14px, $height: 20px);
   }
 
   @media (max-width: 767px) {
-    @include font-style($size: 12px, $height: 16px, $color: $color-darkBlue);
+    @include font-style($size: 12px, $height: 16px);
   }
 }
 
 .research__text:last-of-type {
-  @include font-style($weight: 300, $size: 18px, $height: 26px, $color: $color-darkBlue);
+  @include font-style($weight: 300, $size: 18px, $height: 26px);
   letter-spacing: 0.1px;
   position: relative;
   margin-top: 25px;
 
   @media (max-width: 1023px) {
-    @include font-style($weight: 300, $size: 14px, $height: 20px, $color: $color-darkBlue);
+    @include font-style($weight: 300, $size: 14px, $height: 20px);
   }
 
   @media (max-width: 767px) {
-    @include font-style($size: 12px, $height: 16px, $color: $color-darkBlue);
+    @include font-style($size: 12px, $height: 16px);
+    margin-top: 20px;
   }
 }
 
@@ -108,13 +112,19 @@
   }
 }
 
-.research__grid {
+.research__list {
   max-width: 1110px;
   list-style: none;
   @include flex();
   gap: 30px;
   margin: 0 auto;
   padding: 0;
+
+  @media (max-width: 767px) {
+   flex-wrap: wrap;
+   max-width: 288px;
+    gap: 8px;
+  }
 }
 
 .research__card {
@@ -131,10 +141,17 @@
   transform: translateY(0px);
   transition: transform 0.6s ease;
 
-  @media (max-width: 1279px) {
+  @media (max-width: 1180px) {
     width: 150px;
     height: 242px;
     padding: 12px;
+  }
+
+  @media (max-width: 767px) {
+    width: 140px;
+    height: 224px;
+    padding: 10px;
+    box-shadow: none;
   }
 }
 
@@ -145,12 +162,17 @@
 }
 
 .research__card-title {
-  @include font-style($weight: 600, $color: $color-deepBlue);
+  color: $color-deepBlue;
+  @include font-style($weight: 600);
   text-align: center;
   margin: 0;
 
-  @media (max-width: 1279px) {
-    @include font-style($weight: 600, $size: 12px, $height: 16px, $color: $color-deepBlue);
+  @media (max-width: 1180px) {
+    @include font-style($weight: 600, $size: 12px, $height: 16px);
+  }
+
+  @media (max-width: 767px) {
+    @include font-style($weight: 600, $size: 10px, $height: 14px);
   }
 }
 
@@ -161,7 +183,7 @@
 .research__card-title-qa {
   max-width: 80px;
 
-  @media (max-width: 1279px) {
+  @media (max-width: 1180px) {
     max-width: 50px;
   }
 }
@@ -169,25 +191,31 @@
 .research__icon {
   margin-bottom: 10px;
 
-  @media (max-width: 1279px) {
+  @media (max-width: 1180px) {
     width: 41px;
     height: 41px;
   }
 }
 
 .research__card-text {
-  @include font-style($size: 14px, $height: 20px, $color: $color-deepBlue);
+  color: $color-deepBlue;
+  @include font-style($size: 14px, $height: 20px);
   text-align: center;
   margin: 0 0 32px 0;
 
-  @media (max-width: 1279px) {
-    @include font-style($size: 10px, $height: 14px, $color: $color-deepBlue);
+  @media (max-width: 1180px) {
+    @include font-style($size: 10px, $height: 14px);
     margin-bottom: 20px;
+  }
+
+  @media (max-width: 767px) {
+    margin-bottom: 16px;
   }
 }
 
 .research__link {
-  @include font-style($size: 14px, $height: 20px, $color: $color-deepBlue);
+  color: $color-deepBlue;
+  @include font-style($size: 14px, $height: 20px);
   width: 215px;
   height: 40px;
   border: 1px solid $color-deepBlue;
@@ -224,8 +252,8 @@
 .research__card::after {
   content: '';
   position: absolute;
-  bottom: 0px;
-  left: 0px;
+  bottom: 0;
+  left: 0;
   width: 255px;
   height: 430px;
   background: $color-gradient-biege;
@@ -233,9 +261,16 @@
   z-index: -1;
   transition: background 0.6s ease;
 
-  @media (max-width: 1279px) {
+  @media (max-width: 1180px) {
     width: 150px;
     height: 242px;
+    border-radius: $border-radius-tab;
+  }
+
+  @media (max-width: 1180px) {
+    width: 140px;
+    height: 224px;
+    border-radius: $border-radius-tab;
   }
 }
 
@@ -255,21 +290,28 @@
 }
 
 .research__button-details {
-  @include font-style($weight: 600, $size: 14px, $height: 19px, $color: $color-darkBlue);
+  color: $color-darkBlue;
+  @include font-style($weight: 600, $size: 14px, $height: 19px);
   margin: 0;
   border-radius: $border-radius-desktop;
   width: 100%;
   background-color: transparent;
   padding: 11px 0;
 
-  @media (max-width: 1279px) {
+  @media (max-width: 1180px) {
     padding: 9px 0;
     border-radius: $border-radius-tab;
+  }
+
+  @media (max-width: 767px) {
+    @include font-style($weight: 600, $size: 10px, $height: 14px);
+
   }
 }
 
 .research__button-details:hover {
-  @include font-style($weight: 600, $size: 14px, $height: 19px, $color: $color-white);
+  color: $color-white;
+  @include font-style($weight: 600, $size: 14px, $height: 19px);
   border: 1px solid $color-white;
   cursor: pointer;
 }
