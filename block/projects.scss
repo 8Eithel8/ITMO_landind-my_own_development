@@ -18,7 +18,7 @@
 .projects__item {
   @include font-style($size: 16px, $height: 22px);
   text-transform: uppercase;
-  width: 278px;
+  //width: 278px;
   text-align: center;
   border-bottom: 5px solid transparent;
  }
