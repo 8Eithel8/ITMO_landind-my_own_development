@@ -4,7 +4,7 @@
   background-color: $color-darkBlue;
   z-index: 1;
   @include flex();
-  padding: 13px 165px 13px 165px;
+  padding: 13px 0;
 
   @media (max-width: 1023px) {
     justify-content: start;
@@ -14,6 +14,11 @@
   @media (max-width: 767px) {
     padding: 10px 16px;
   }
+}
+
+.header-wrapper {
+  @include flex();
+  margin: 0 auto;
 }
 
 .header__button-burger {
