@@ -18,6 +18,7 @@
 
 .header__button-burger {
   display: none;
+
   @media (max-width: 1023px) {
     display: flex;
     align-items: center;

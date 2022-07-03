@@ -1,21 +1,40 @@
 .research {
   max-width: 100%;
   background-color: $color-lightBlue;
-  padding: 80px 165px 80px 129px;
+  //padding: 80px 165px 80px 129px;
 }
 
 .research__wrapper-texts {
-  width: 1146px;
+  max-width: 1146px;
   @include flex;
   margin: 60px 0 80px 0;
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.research__texts {
+  @media (max-width: 767px) {
+    order: 2
+  }
 }
 
 .research__text {
   @include font-style($color: $color-darkBlue);
   max-width: 540px;
   letter-spacing: 0.1px;
-  padding-left: 36px;
+  //padding-left: 36px;
   margin: 0;
+
+  @media (max-width: 1023px) {
+    @include font-style($size: 14px, $height: 20px, $color: $color-darkBlue);
+  }
+
+  @media (max-width: 767px) {
+    @include font-style($size: 12px, $height: 16px, $color: $color-darkBlue);
+  }
 }
 
 .research__text:last-of-type {
@@ -23,29 +42,68 @@
   letter-spacing: 0.1px;
   position: relative;
   margin-top: 25px;
+
+  @media (max-width: 1023px) {
+    @include font-style($weight: 300, $size: 14px, $height: 20px, $color: $color-darkBlue);
+  }
+
+  @media (max-width: 767px) {
+    @include font-style($size: 12px, $height: 16px, $color: $color-darkBlue);
+  }
 }
 
 .research__text:last-of-type::after {
   content: '';
   position: absolute;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: -30px;
   width: 24px;
   height: 24px;
   background-image: url('../img/Lab/molecule.svg');
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media (max-width: 1279px) {
+    display: none;
+  }
 }
 
 .research__images {
   @include flex();
   gap: 12px;
   max-width: 552px;
+
+  @media (max-width: 767px) {
+    order: 1;
+    margin-bottom: 20px;
+  }
 }
 
 .research__image {
   width: 264px;
   height: 276px;
+  object-fit: contain;
+
+  @media (max-width: 1279px) {
+    width: 330px;
+    height: 240px;
+  }
+
+  @media (max-width: 1023px) {
+    width: 330px;
+    height: 240px;
+  }
+
+  @media (max-width: 767px) {
+    width: 288px;
+    height: 180px;
+  }
+}
+
+.hidden-tab {
+  @media (max-width: 1279px) {
+   display: none;
+  }
 }
 
 .research__grid {
@@ -54,7 +112,7 @@
   @include flex();
   gap: 30px;
   margin: 0 auto;
-  padding-left: 35px;
+  padding: 0;
 }
 
 .research__card {
@@ -70,6 +128,12 @@
   z-index: 1;
   transform: translateY(0px);
   transition: transform 0.6s ease;
+
+  @media (max-width: 1279px) {
+    width: 150px;
+    height: 242px;
+    padding: 12px;
+  }
 }
 
 .research__card:hover {
@@ -78,10 +142,14 @@
   transition: transform 0.6s ease;
 }
 
-
-  .research__card-title {
+.research__card-title {
   @include font-style($weight: 600, $color: $color-deepBlue);
   text-align: center;
+  margin: 0;
+
+  @media (max-width: 1279px) {
+    @include font-style($weight: 600, $size: 12px, $height: 16px, $color: $color-deepBlue);
+  }
 }
 
 .research__card-title-calculations {
@@ -90,16 +158,30 @@
 
 .research__card-title-qa {
   max-width: 80px;
+
+  @media (max-width: 1279px) {
+    max-width: 50px;
+  }
 }
 
 .research__icon {
   margin-bottom: 10px;
+
+  @media (max-width: 1279px) {
+    width: 41px;
+    height: 41px;
+  }
 }
 
 .research__card-text {
   @include font-style($size: 14px, $height: 20px, $color: $color-deepBlue);
   text-align: center;
   margin: 0 0 32px 0;
+
+  @media (max-width: 1279px) {
+    @include font-style($size: 10px, $height: 14px, $color: $color-deepBlue);
+    margin-bottom: 20px;
+  }
 }
 
 .research__link {
@@ -119,7 +201,6 @@
 .research__card-calculations,
 .research__card-qa {
   position: relative;
-
 }
 
 .research__card-analysis::before {
@@ -138,11 +219,6 @@
   @include research-card-before(url("../img/Lab/Robot.png"));
 }
 
-//.research__card-analysis:hover {
-//  transform: translateY(-20px);
-//  transition: transform, background-color 0.3s ease;
-//}
-
 .research__card::after {
   content: '';
   position: absolute;
@@ -154,12 +230,16 @@
   border-radius: $border-radius-desktop;
   z-index: -1;
   transition: background 0.6s ease;
+
+  @media (max-width: 1279px) {
+    width: 150px;
+    height: 242px;
+  }
 }
 
 .research__card:hover::after {
   background: linear-gradient(180deg, #009FAC 0%, rgba(224, 240, 255, 0) 100%, rgba(0, 159, 172, 0) 100%);
   transition: background 0.6s ease;
-
 }
 
 .research__card:hover > .research__card-title,
@@ -170,4 +250,24 @@
 .research__card:hover > .research__link {
   color: $color-white;
   border: solid 1px $color-white;
+}
+
+.research__button-details {
+  @include font-style($weight: 600, $size: 14px, $height: 19px, $color: $color-darkBlue);
+  margin: 0;
+  border-radius: $border-radius-desktop;
+  width: 100%;
+  background-color: transparent;
+  padding: 11px 0;
+
+  @media (max-width: 1279px) {
+    padding: 9px 0;
+    border-radius: $border-radius-tab;
+  }
+}
+
+.research__button-details:hover {
+  @include font-style($weight: 600, $size: 14px, $height: 19px, $color: $color-white);
+  border: 1px solid $color-white;
+  cursor: pointer;
 }
