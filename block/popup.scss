@@ -112,26 +112,28 @@
 }
 
 .popup__title {
+  color: $color-darkBlue;
   margin: 5px 0 25px 0;
 
-  @include font-style($weight: 600, $color: $color-darkBlue);
+  @include font-style($weight: 600);
 
   @media (max-width: 1279px) {
-    @include font-style($weight: 600, $size: 14px, $height: 19px, $color: $color-darkBlue);
+    @include font-style($weight: 600, $size: 14px, $height: 19px);
     order: 1;
   }
 }
 
 .popup__text,
 .popup__list-research {
-  @include font-style($weight: 400, $size: 18px, $height: 24.5px, $color: $color-darkBlue);
+  color: $color-darkBlue;
+  @include font-style($weight: 400, $size: 18px, $height: 24.5px);
 
   @media (max-width: 1279px) {
-    @include font-style($size: 14px, $height: 19px, $color: $color-darkBlue);
+    @include font-style($size: 14px, $height: 19px);
   };
 
   @media (max-width: 767px) {
-    @include font-style($size: 12px, $height: 16.5px, $color: $color-darkBlue);
+    @include font-style($size: 12px, $height: 16.5px);
   };
 }
 

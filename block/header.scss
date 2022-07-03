@@ -34,13 +34,14 @@
     cursor: pointer;
     z-index: 1;
     flex-grow: 1;
-    flex-shrink: 0;
   }
 
   @media (max-width: 767px) {
-    padding: 10px 16px;
     top: 10px;
     left: 16px;
+    width: 24px;
+    height: 24px;
+    flex-grow: 0;
   }
 }
 
@@ -113,7 +114,7 @@
 }
 
 .header__navigation-link {
-  //text-align: center;
+  color: $color-white;
   @include font-style($size: 14px, $height: 44px);
   text-decoration: none;
 
