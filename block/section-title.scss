@@ -16,14 +16,13 @@
   .section-title {
     font-size: 24px;
     line-height: 33px;
-    margin-top: 20px;
+    //margin-top: 20px;
     padding-left: 0;
   }
 }
 
 @media (max-width: 767px) {
   .section-title {
-    margin-top: 60px;
     font-size: 16px;
     line-height: 22px;
     margin-left: 16px;

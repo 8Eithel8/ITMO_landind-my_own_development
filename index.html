@@ -164,8 +164,8 @@
         </div>
         <div class="projects-block__control">
           <div class="swiper-button-prev swiper-button-prev_projects-block"></div>
-          <div class="swiper-button-next swiper-button-next_projects-block"></div>
           <div class="swiper-pagination swiper-pagination_projects-block"></div>
+          <div class="swiper-button-next swiper-button-next_projects-block"></div>
         </div>
       </div>
     </section>
@@ -192,7 +192,11 @@
           </ul>
           <a class="education__link-list" href="#">Подробнее</a>
         </div>
-        <img class="education__image" src="./img/education/image%2043.jpg" alt="">
+        <picture>
+          <source srcset="./img/education/image_43-mini.jpg" media="(max-width: 767px)">
+          <source srcset="./img/education/image_43-tab.jpg" media="(max-width: 1023px)">
+          <img class="education__image" src="./img/education/image%2043.jpg" alt="Выпускники">
+        </picture>
       </div>
       <div class="education__block education__block_magistracy hidden">
         <div class="education__list-wrapper">

@@ -6,7 +6,6 @@ const buttonsClosePopup =  popupResearch.querySelectorAll('.popup__button_close'
 
 /*открываем попап*/
 function openPopup() {
-    console.log('хрен');
     popupResearch.classList.add('popup_opened');
     document.addEventListener('keydown', closePopupByEsc);
     buttonClosePopup.addEventListener('click', closePopup);

@@ -5,10 +5,21 @@
 }
 
 .education__text {
+  color: $color-white;
   max-width: 920px;
   @include font-style();
   letter-spacing: 0.1px;
   margin: 30px auto 60px auto;
+
+  @media (max-width: 1023px) {
+    @include font-style($size: 14px, $height: 20px);
+    margin-bottom: 40px;
+  }
+
+  @media (max-width: 767px) {
+    @include font-style($size: 12px, $height: 16px);
+    margin: 20px 0;
+  }
 }
 
 .education__block {
@@ -18,18 +29,40 @@
   border-radius: $border-radius-desktop;
   padding: 30px;
   gap: 30px;
-  margin-bottom: 35px;
+  margin: 0 auto 35px auto;
+
+  @media (max-width: 1023px) {
+    padding: 20px;
+  }
+
+  @media (max-width: 767px) {
+    max-width: 288px;
+    flex-direction: column;
+    padding: 16px;
+  }
 }
 
 .education__list-wrapper {
   @include flex();
   flex-direction: column;
+
+  @media (max-width: 767px) {
+    order: 2;
+  }
 }
 
 .education__subtitle {
   color: $color-darkBlue;
   @include font-style($weight:600);
   margin: 0;
+
+  @media (max-width: 1023px) {
+    @include font-style($weight:600, $size: 14px, $height: 20px);
+  }
+
+  @media (max-width: 767px) {
+    @include font-style($weight:600, $size: 12px, $height: 16px);
+  }
 }
 
 .education__list {
@@ -39,6 +72,14 @@
 .education__item {
   color: $color-darkBlue;
   @include font-style();
+
+  @media (max-width: 1023px) {
+    @include font-style($size: 14px, $height: 20px);
+  }
+
+  @media (max-width: 767px) {
+    @include font-style($size: 12px, $height: 16px);
+  }
 }
 
 .education__link-list {
@@ -48,6 +89,14 @@
   margin-top: 20px;
   position: relative;
   max-width: min-content;
+
+  @media (max-width: 1023px) {
+    @include font-style($size: 14px, $height: 19px);
+  }
+
+  @media (max-width: 767px) {
+    @include font-style($size: 12px, $height: 16px);
+  }
 }
 
 .education__link-list::after{
@@ -65,8 +114,13 @@
 }
 
 .education__image {
-  width: 445px;
-  height: 364px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+
+   @media (max-width: 767px) {
+    order: 1;
+  }
 }
 
 .education__buttons {
@@ -76,16 +130,36 @@
   border-radius: $border-radius-desktop;
   @include flex();
   margin: 0 auto;
+
+  @media (max-width: 1023px) {
+    width: 450px;
+    height: 44px;
+  }
+
+  @media (max-width: 767px) {
+    width: 100%;
+    height: 40px;
+  }
 }
 
 .education__button {
   color: $color-lightBlue;
-  width: 279px;
+  width: 50%;
   background-color: transparent;
   border-radius: $border-radius-desktop;
   border: none;
   @include font-style($weight: 600);
   text-transform: uppercase;
+  padding: 0;
+
+  @media (max-width: 1023px) {
+    @include font-style($weight:600, $size: 14px, $height: 20px);
+  }
+
+  @media (max-width: 767px) {
+    @include font-style($weight:400, $size: 12px, $height: 16px);
+    border-radius: $border-radius-tab;
+  }
 }
 
 .education__button:hover {
@@ -96,6 +170,14 @@
   color: $color-darkBlue;
   background-color: $color-lightBlue;
   @include font-style($weight: 600);
+
+  @media (max-width: 1023px) {
+    @include font-style($weight:600, $size: 14px, $height: 20px);
+  }
+
+  @media (max-width: 767px) {
+    @include font-style($weight:600, $size: 12px, $height: 16px);
+  }
 }
 
 .hidden {

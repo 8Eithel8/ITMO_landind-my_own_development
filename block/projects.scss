@@ -13,21 +13,32 @@
   padding: 0;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  margin: 30px 0 60px 0;
+
+  @media (max-width: 1023px) {
+    margin-bottom: 30px;
+  }
 }
 
 .projects__item {
+  color: $color-white;
   @include font-style($size: 16px, $height: 22px);
   text-transform: uppercase;
   //width: 278px;
   text-align: center;
   border-bottom: 5px solid transparent;
+
+  @media (max-width: 1023px) {
+    @include font-style($size: 14px, $height: 19px);
+  }
+
+  @media (max-width: 767px) {
+    @include font-style($size: 12px, $height: 16px);
+  }
  }
 
 .projects__item:hover {
   border-bottom: 5px solid $color-emerland;
-}
-
-.projects-block {
 }
 
 .projects-block__control {
