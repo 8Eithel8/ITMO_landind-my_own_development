@@ -75,7 +75,7 @@
 new Swiper(".mySwiperProject", {
     slidesPerView: "auto",
     spaceBetween: 30,
-    slidesPerGroup: 3,
+    // slidesPerGroup: 3,
     pagination: {
         el: ".projects-block__swiper-pagination",
         type: "fraction",

@@ -1,8 +1,16 @@
 .publications {
   max-width: 1440px;
-  padding: 80px 0;
   background-color: #E0F0FF;
   margin: 0 auto;
+  padding: 80px 0;
+
+  @media (max-width: 1340px) {
+    padding: 60px 0;
+  }
+
+  @media (max-width: 767px) {
+    padding: 40px 0;
+  }
 }
 
 .publications__wrapper {
