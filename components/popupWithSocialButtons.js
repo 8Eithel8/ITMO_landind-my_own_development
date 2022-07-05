@@ -6,7 +6,6 @@ function getXY(button) {
     const buttonXY = button.getBoundingClientRect();
     const windowWidth = document.documentElement.clientWidth;
     let newX = buttonXY.left;
-    console.log(newX);
     let newY = buttonXY.top;
     if (newX > (windowWidth * 0.82)) {
         popupContainer.style.top = (newY - 80) + "px";
