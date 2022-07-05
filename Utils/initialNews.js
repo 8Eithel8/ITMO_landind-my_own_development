@@ -142,49 +142,49 @@ export const initialTeam = [
     {
         image: './img/Team/photo_1_Bobtsov.jpg',
         name: 'Бобцов Алексей Алексеевич',
-        post: 'Директор',
-        postRank: 'профессор',
+        post: 'Директор, ',
+        postRank: 'профессор, ',
         postDegree: 'ДТН'
     },
     {
         image: './img/Team/photo_2_Bukhan.jpg',
         name: 'Буханоский Александр Валерьевич',
-        post: 'Директор',
-        postRank: 'профессор',
+        post: 'Директор, ',
+        postRank: 'профессор, ',
         postDegree: 'ДТН'
     },
     {
         image: './img/Team/photo_3_Murom.jpg',
         name: 'Муромцев Дмитрий Ильич',
-        post: 'Руководитель',
-        postRank: 'доцент',
+        post: 'Руководитель, ',
+        postRank: 'доцент, ',
         postDegree: 'КТН'
     },
     {
         image: './img/Team/photo_4_Matveev.jpg',
         name: 'Матвеев Юрий Николаевич',
-        post: 'Руководитель',
-        postRank: 'профессор',
+        post: 'Руководитель, ',
+        postRank: 'профессор, ',
         postDegree: 'ДТН'
     },
     {
         image: './img/Team/photo_5_Shal.jpg',
         name: 'Шалыто Анатолий Абрамович',
-        post: 'Профессор',
+        post: 'Профессор, ',
         postDegree: 'ДТН'
     },
     {
         image: './img/Team/photo_6_Kol.jpg',
         name: 'Колюбин Сергей Алексеевич',
-        post: 'Начальник',
-        postRank: 'профессор',
+        post: 'Начальник, ',
+        postRank: 'профессор, ',
         postDegree: 'ДТН'
     },
     {
         image: './img/Team/photo_7_Prikin.jpg',
         name: 'Пыркин Антон Александрович',
-        post: 'Декан',
-        postRank: 'профессор',
+        post: 'Декан, ',
+        postRank: 'профессор, ',
         postDegree: 'ДТН'
     },
 ]
