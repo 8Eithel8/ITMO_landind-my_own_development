@@ -142,46 +142,49 @@ export const initialTeam = [
     {
         image: './img/Team/photo_1_Bobtsov.jpg',
         name: 'Бобцов Алексей Алексеевич',
-        post: 'Директор, профессор, ДТН'
+        post: 'Директор',
+        postRank: 'профессор',
+        postDegree: 'ДТН'
     },
     {
         image: './img/Team/photo_2_Bukhan.jpg',
         name: 'Буханоский Александр Валерьевич',
-        post: 'Директор, профессор, ДТН'
+        post: 'Директор',
+        postRank: 'профессор',
+        postDegree: 'ДТН'
     },
     {
         image: './img/Team/photo_3_Murom.jpg',
         name: 'Муромцев Дмитрий Ильич',
-        post: 'Руководитель, доцент, КТН'
+        post: 'Руководитель',
+        postRank: 'доцент',
+        postDegree: 'КТН'
     },
     {
         image: './img/Team/photo_4_Matveev.jpg',
         name: 'Матвеев Юрий Николаевич',
-        post: 'Руководитель, профессор, ДТН'
+        post: 'Руководитель',
+        postRank: 'профессор',
+        postDegree: 'ДТН'
     },
     {
         image: './img/Team/photo_5_Shal.jpg',
         name: 'Шалыто Анатолий Абрамович',
-        post: 'Профессор, ДТН'
+        post: 'Профессор',
+        postDegree: 'ДТН'
     },
     {
         image: './img/Team/photo_6_Kol.jpg',
         name: 'Колюбин Сергей Алексеевич',
-        post: 'Начальник, профессор, ДТН'
+        post: 'Начальник',
+        postRank: 'профессор',
+        postDegree: 'ДТН'
     },
     {
         image: './img/Team/photo_7_Prikin.jpg',
         name: 'Пыркин Антон Александрович',
-        post: 'Декан, профессор, ДТН'
-    },
-    {
-        image: './img/Publication/publication_Ensemble-based_method.jpg',
-        name: 'Пыркин Антон Александрович',
-        post: 'Декан, профессор, ДТН'
-    },
-    {
-        image: './img/Team/photo_7_Prikin.jpg',
-        name: 'Пыркин Антон\u00a0Александрович',
-        post: 'Декан, профессор, ДТН'
+        post: 'Декан',
+        postRank: 'профессор',
+        postDegree: 'ДТН'
     },
 ]
