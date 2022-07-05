@@ -20,29 +20,74 @@
   @include flex();
   flex-direction: column;
   align-items: center;
-  width: 255px;
-  height: 440px;
+  //width: 255px;
+  //height: 440px;
   background-color: #FFFFFF;
   box-sizing: border-box;
   border-radius: $border-radius-desktop;
   padding: $padding-inside-card;
   flex-shrink: 0;
-  margin: 15px 10px 0 0;
+  margin: 15px 0 0 0;
+
+  @media (max-width: 1023px) {
+    width: 210px;
+    height: 337px;
+    padding: 20px;
+  }
+
+  @media (max-width: 767px) {
+    width: 140px;
+    height: 259px;
+    padding: 10px;
+  }
 }
 
 .team__image {
   width: 215px;
   height: 286px;
+  object-fit: cover;
+  border-radius: $border-radius-desktop;
+
+  @media (max-width: 1023px) {
+    width: 170px;
+    height: 226px;
+  }
+
+  @media (max-width: 767px) {
+    width: 120px;
+    height: 150px;
+    border-radius: $border-radius-desktop;
+  }
 }
 
-.team__card-title {
+.team__member-name {
   color: $color-darkBlue;
   @include font-style($weight: 600);
   text-align: center;
   margin: 18px 0 0 0;
+
+  @media (max-width: 1023px) {
+    @include font-style($weight: 600, $size: 14px, $height: 19px);
+    margin-top: 12px;
+  }
+
+  @media (max-width: 767px) {
+    @include font-style($weight: 600, $size: 12px, $height: 16px);
+    max-width: 80px;
+  }
 }
 
 .team__member {
   @include text-italic-color;
   margin: 0;
+  text-align: center;
+
+  @media (max-width: 1023px) {
+    @include font-style($size: 12px, $height: 17px);
+  }
+
+  @media (max-width: 767px) {
+    @include font-style($size: 10px, $height: 14px);
+    max-width: 100px;
+  }
 }

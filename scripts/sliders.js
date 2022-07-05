@@ -59,10 +59,10 @@
     },
     breakpoints: {
         1025: {
-            spaceBetween: 30
+            spaceBetween: 20
         },
         321: {
-            spaceBetween: 20
+            spaceBetween: 10
         }
     },
 

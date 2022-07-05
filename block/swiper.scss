@@ -184,7 +184,30 @@
     opacity: 1 !important;
 }
 
+.team__swiper-slide {
+    width: 255px !important;
+    height: 440px !important;
 
+    @media (max-width: 1023px) {
+        margin: 0 !important;
+        width: 210px !important;
+        height: 337px !important;
+        padding: 20px;
+    }
+
+    @media (max-width: 767px) {
+        width: 140px !important;
+        height: 259px !important;
+        padding: 10px;
+    }
+}
+
+.mySwiperTeam {
+    @media (max-width: 1023px) {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+}
 
 .team__swiper-pagination > .swiper-pagination-bullet {
     background-color: white !important;
