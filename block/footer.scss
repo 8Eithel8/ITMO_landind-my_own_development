@@ -1,6 +1,14 @@
 .footer {
   background-color: $color-deepBlue;
   padding: 80px 165px;
+
+  @media (max-width: 1279px) {
+    padding: 60px 39px;
+  }
+
+  @media (max-width: 767px) {
+    padding: 40px 16px;
+  }
 }
 
 
@@ -16,7 +24,32 @@
   //"text-info . . ."
   "text-info . . social"
   "copyright . . .";
-  grid-column-gap: 140px;
+  grid-column-gap: 100px;
+  grid-row-gap: 35px;
+
+  @media (max-width: 1279px) {
+    grid-template-areas:
+      "logo . . ."
+      "copyright-itmo copyright-itmo . ."
+      "text-info column_left column_right contacts"
+      "text-info column_left column_right contacts"
+      //"text-info . . ."
+      "copyright copyright . social";
+      //"copyright . . .";
+      grid-column-gap: 38px;
+      grid-row-gap: 35px;
+  }
+
+  @media (max-width: 767px) {
+    grid-template-areas:
+      "logo copyright-itmo"
+      "column_left column_right"
+      "contacts contacts"
+      "social social"
+      "copyright copyright";
+      grid-column-gap: 38px;
+      grid-row-gap: 35px;
+  }
 }
 
 .footer__logo {
@@ -35,14 +68,37 @@
   color: $color-white;
   @include font-style($size: 14px, $height: 19px);
   grid-area: copyright-itmo;
+  //margin: 0 0 30px 0;
+  margin: 0;
+  max-width: 253px;
+
+  @media (max-width: 1279px) {
+    @include font-style($size: 12px, $height: 16px);
+    max-width: 241px;
+  }
+
+  @media (max-width: 767px) {
+    margin-top: 10px;
+    max-width: 140px;
+  }
 }
 
 
 .footer__text {
   color: $color-white;
   @include font-style($size: 14px, $height: 19px);
-  margin: 0 0 30px 0;
+  margin: 0;
   grid-area: text-info;
+  max-width: 263px;
+
+  @media (max-width: 1279px) {
+    @include font-style($size: 12px, $height: 20px);
+    max-width: 241px;
+  }
+
+  @media (max-width: 767px) {
+   display: none;
+  }
 }
 
 .footer__column_left {
@@ -90,6 +146,11 @@
   color: $color-white;
   @include font-style($weight: 600);
   margin: 0;
+
+  @media (max-width: 1279px) {
+    @include font-style($weight: 700, $size: 18px, $height: 20px);
+    max-width: 241px;
+  }
 }
 
 .footer__contact_phone {
@@ -99,6 +160,15 @@
 .footer__contact {
   color: $color-white;
   @include font-style($weight: 400, $size: 14px, $height: 19px);
+
+  @media (max-width: 1279px) {
+    @include font-style($size: 12px, $height: 20px);
+    max-width: 241px;
+  }
+}
+
+.footer__contact_email {
+  margin-bottom: 0;
 }
 
 .footer__copyright {
@@ -110,8 +180,8 @@
 }
 
 .footer__social {
-  margin-top: 50px;
   grid-area: social;
+  align-self: start;
 }
 
 .footer__social-icon {
