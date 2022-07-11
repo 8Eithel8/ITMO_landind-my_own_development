@@ -62,6 +62,7 @@
   @include font-style(400, 14px, 24px);
   width: 825px;
   min-height: 35px;
+
   @media (max-width: 1023px) {
     order: 1;
     display: block;
@@ -80,7 +81,6 @@
 
 .header__navigation-links {
   list-style: none;
-  //@include flex();
   @include font-style(400, 14px, 24px);
   width: 825px;
   min-height: 35px;

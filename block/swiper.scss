@@ -120,6 +120,15 @@
     background-color: #009FAC;
 }
 
+.mySwiperProject {
+    padding: 0;
+}
+
+.projects__swiper-slide {
+    @media (max-width: 767px) {
+    margin-right: 8px;
+    }
+}
 
 .mySwiperPub {
     max-width: 1104px;
@@ -233,4 +242,9 @@
 .swiper-button-prev_projects-block,
 .swiper-button-next_projects-block {
     background-image: url('../img/icons/arrow.svg');
+}
+
+.swiper-pagination_projects-block {
+    width: 500px;
+    height: 20px;
 }

@@ -5,6 +5,7 @@
   @include flex();
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 
 .projects__list {
@@ -18,6 +19,35 @@
   @media (max-width: 1023px) {
     margin-bottom: 30px;
   }
+
+  @media (max-width: 767px) {
+    flex-wrap: wrap;
+    grid-template-columns: 1fr;
+    order: 1;
+    display: block;
+    position: absolute;
+    visibility: hidden;
+    top: 0;
+    left: 0;
+    width: 250px;
+    margin: 0;
+    padding: 60px 0 0 0;
+    list-style: none;
+    background-color: $color-darkBlue;
+    transition-duration: .25s;
+  }
+}
+
+.projects-block {
+    max-width: 1110px;
+
+  @media (max-width: 1120px) {
+    max-width: 740px;
+  }
+
+    @media (max-width: 767px) {
+      max-width: 288px;
+    }
 }
 
 .projects__item {
@@ -34,14 +64,82 @@
 
   @media (max-width: 767px) {
     @include font-style($size: 12px, $height: 16px);
+    width: 100%;
+    text-align: start;
+    min-height: 44px;
+    vertical-align: center;
   }
  }
 
-.projects__item:hover {
-  border-bottom: 5px solid $color-emerland;
+.project__menu-title {
+  display: none;
+  @media (max-width: 767px) {
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+    @include font-style($size: 12px, $height: 16px);
+    font-style: normal;
+    font-weight: 600;
+    display: flex;
+    align-self: start;
+    text-align: center;
+    color: $color-white;
+    text-transform: uppercase;
+    border-bottom: 2px solid $color-emerland;
+    padding: 16px 10px;
+    margin: 0 0 20px 0;
+  }
 }
 
-.projects-block__control {
+.project__menu-title:hover {
+  @media (max-width: 767px) {
+    background-color: #0c2659;
+  }
+}
+
+.project__menu-title:after {
+  content: "";
+  position: absolute;
+  right: 20px;
+  top: 14px;
+  width: 8px;
+  height: 8px;
+  border-right: 1px solid $color-white;
+  border-bottom: 1px solid $color-white;
+  transform: rotate(45deg);
+}
+
+
+.projects__item:hover {
+  border-bottom: 5px solid $color-emerland;
+
+  @media (max-width: 767px) {
+    border-bottom: none;
+    background-color: $color-deepBlue;
+  }
+}
+
+.project__menu-title:hover ~ .projects__list  {
+  @media (max-width: 767px) {
+    display: block;
+    position: absolute;
+    visibility: hidden;
+    top: 0;
+    left: 0;
+    width: 250px;
+    margin: 0;
+    padding: 60px 0 0 0;
+    list-style: none;
+    background-color: $color-darkBlue;
+    transition-duration: .25s;
+  }
+}
+
+.project__menu-title:checked:after {
+  transform: rotate(180deg);
+}
+
+  .projects-block__control {
   margin: 0 auto;
   max-width: 224px;
   @include flex();
